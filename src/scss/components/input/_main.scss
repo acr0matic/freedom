@@ -3,5 +3,12 @@
 // и подключение дополнительных вариаций
 // -----------------------------------------------------------------------------
 
-@import 'input';
-@import 'checkbox';
+$input__bg: inset 0 6px 16px rgba(0, 0, 0, 0.04);
+$input--hover: #1e5b60;
+$input--error: #e84354;
+
+$input__placeholder: #c4c4c4;
+$input__value: #000000;
+
+@import "input";
+@import "checkbox";
