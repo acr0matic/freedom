@@ -1,0 +1,22 @@
+.FAQ-card {
+  border-radius: 12px;
+
+  padding: 32px;
+
+  background-color: $palette-white;
+  box-shadow: $shadow;
+
+  &:not(:last-child) {
+    margin-bottom: 25px;
+  }
+
+  &__title {
+    margin-bottom: 12px;
+    font-size: $font-title-4;
+    font-family: Geometria, sans-serif;
+  }
+
+  &__description {
+    
+  }
+}
