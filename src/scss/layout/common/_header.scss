@@ -3,12 +3,18 @@
 // -----------------------------------------------------------------------------
 
 #header {
-  background-color: #979797;
+  position: fixed;
+  z-index: $z-index-header;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
 .header {
   display: flex;
   align-items: center;
+
+  padding: 25px 0;
 
   &__nav {
 

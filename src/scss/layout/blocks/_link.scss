@@ -1,10 +1,11 @@
 .link {
   &__icon path {
+    fill: #000000;
     transition: 0.15s ease;
   }
 
   &__icon--inverted path {
-    fill: #000000;
+    fill: #ffffff;
   }
 
   @media (hover: hover) {

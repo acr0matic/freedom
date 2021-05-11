@@ -29,4 +29,9 @@
       }
     }
   }
+
+  &__text {
+    font-size: $font-text-0;
+    line-height: 125%;
+  }
 }
