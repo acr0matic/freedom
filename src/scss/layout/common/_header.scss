@@ -3,9 +3,18 @@
 // -----------------------------------------------------------------------------
 
 #header {
-
+  background-color: #979797;
 }
 
 .header {
+  display: flex;
+  align-items: center;
 
+  &__nav {
+
+  }
+
+  &__social {
+    margin-left: auto;
+  }
 }
