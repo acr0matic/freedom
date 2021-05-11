@@ -1,0 +1,32 @@
+.section {
+  &__title {
+    display: flex;
+    align-items: center;
+
+    font-size: $font-title-1;
+    font-family: Geometria, sans-serif;
+
+    color: $palette-cyan;
+
+    &::before {
+      content: "";
+      display: block;
+
+      width: 118px;
+      height: 4px;
+
+      margin-top: 5px;
+      margin-right: 25px;
+
+      background-color: $palette-cyan;
+    }
+  }
+
+  &__text {
+    font-size: $font-text-1;
+
+    &--big {
+      font-size: $font-text-0;
+    }
+  }
+}

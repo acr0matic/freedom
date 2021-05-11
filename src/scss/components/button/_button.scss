@@ -1,0 +1,28 @@
+.button {
+  position: relative;
+  z-index: 0;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  outline: none;
+  border: none;
+  border-radius: 12px;
+
+  padding: 20px 64px;
+
+  background-color: transparent;
+
+  color: $palette-white;
+  font-weight: $weight-Bold;
+  font-size: $font-interface-0;
+
+  cursor: pointer;
+  transition: 0.15s ease;
+
+  &:disabled {
+    opacity: 0.8;
+    pointer-events: none;
+  }
+}

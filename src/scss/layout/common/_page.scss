@@ -1,0 +1,32 @@
+.page {
+  &__title {
+    font-size: $font-title-1;
+    font-family: Geometria, sans-serif;
+
+    &--main {
+      font-size: $font-title-0;
+    }
+
+    &--colored {
+      color: $palette-cyan;
+    }
+
+    &--line {
+      display: flex;
+      align-items: center;
+
+      &::before {
+        content: "";
+        display: block;
+
+        width: 118px;
+        height: 4px;
+
+        margin-top: 5px;
+        margin-right: 25px;
+
+        background-color: $palette-cyan;
+      }
+    }
+  }
+}

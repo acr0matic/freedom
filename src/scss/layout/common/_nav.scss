@@ -4,10 +4,31 @@
   }
 
   &__item {
+    border: 2px solid transparent;
+    border-radius: 12px;
 
+    padding: 6px 16px;
+    transition: 0.15s ease;
+
+    &--active {
+      border-color: $palette-cyan;
+
+      .nav__link {
+        color: $palette-cyan;
+      }
+    }
+
+    &:hover:not(.nav__item--active) {
+      @media (hover: hover) {
+        .nav__link {
+          color: $palette-yellow;
+        }
+      }
+    }
   }
 
   &__link {
-
+    font-size: $font-text-1;
+    transition: 0.15s ease;
   }
 }
