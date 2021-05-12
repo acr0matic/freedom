@@ -1,4 +1,10 @@
 .link {
+  transition: 0.15s ease;
+
+  &--inverted {
+    color: #ffffff;
+  }
+
   &__icon path {
     fill: #000000;
     transition: 0.15s ease;

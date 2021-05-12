@@ -12,8 +12,10 @@
 @import "blocks/social";
 @import "blocks/link";
 @import "blocks/partners";
+@import "blocks/contact";
 
 // Фрагметы главной страницы
 @import "pages/main/hero.scss";
 @import "pages/main/FAQ/main.scss";
 @import "pages/main/feedback.scss";
+@import "pages/main/callback.scss";

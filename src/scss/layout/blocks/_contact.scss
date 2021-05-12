@@ -1,0 +1,30 @@
+.contact {
+  border-radius: 12px;
+  background-color: $palette-cyan;
+
+  &__wrapper {
+    padding: 48px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__link {
+    font-size: $font-title-4;
+
+    &:not(:last-child) {
+      margin-bottom: 35px;
+    }
+  }
+
+  &__icon {
+    margin-right: 15px;
+  }
+
+  &__partners {
+    margin-top: 45px;
+    margin-bottom: -30px;
+  }
+}
