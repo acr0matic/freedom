@@ -1,0 +1,37 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.input {
+  &__field {
+    width: 100%;
+
+    border: 2px solid transparent;
+    border-radius: 12px;
+    outline: none;
+
+    padding: 18px 32px;
+
+    box-shadow: $input__bg;
+
+    font-size: $font-interface-0;
+
+    transition: 0.15s ease;
+
+    &::placeholder {
+      color: $input__placeholder;
+    }
+
+    &:hover:not(:focus) {
+      @media (hover: hover) {
+        border-color: $input--hover;
+      }
+    }
+  }
+}

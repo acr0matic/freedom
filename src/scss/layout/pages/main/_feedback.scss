@@ -1,0 +1,27 @@
+#feedback {
+}
+
+.feedback {
+  &__text {
+    margin-bottom: 65px;
+  }
+
+  &__picture {
+    position: relative;
+    top: -30px;
+
+    display: block;
+    border-radius: 12px;
+    overflow: hidden;
+
+    box-shadow: $shadow;
+
+    @include breakpoint($breakpoint-laptop--large) {
+      top: 0;
+    }
+  }
+
+  &__image {
+    width: 100%;
+  }
+}
