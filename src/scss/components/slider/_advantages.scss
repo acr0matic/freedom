@@ -1,0 +1,57 @@
+.advantages-slider {
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  .swiper-slide {
+    width: initial;
+
+    &:not(:last-child) {
+      margin-right: 48px;
+
+      @include breakpoint($breakpoint-laptop--large) {
+        margin-right: 0;
+      }
+    }
+
+    @include breakpoint($breakpoint-laptop--large) {
+      width: 100%;
+    }
+  }
+
+  &__prev,
+  &__next {
+    top: 25px;
+    display: none;
+    width: initial;
+
+    background-color: $palette-white;
+
+    @media (hover: hover) {
+      &:hover {
+        opacity: 0.6;
+      }
+    }
+
+    @include breakpoint($breakpoint-laptop--large) {
+      display: block;
+    }
+  }
+
+  &__prev {
+    left: 0;
+    padding-right: 10px;
+
+    &::after {
+      content: url("../img/icons/control/slider__prev--small.svg");
+    }
+  }
+
+  &__next {
+    right: 0;
+    padding-left: 10px;
+
+    &::after {
+      content: url("../img/icons/control/slider__next--small.svg");
+    }
+  }
+}

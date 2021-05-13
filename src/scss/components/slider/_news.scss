@@ -1,0 +1,55 @@
+.news-slider {
+  position: relative;
+
+  padding: 0 15px 30px 15px;
+  margin-left: -10px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: 100;
+    right: 0;
+    bottom: 0;
+
+    display: block;
+    width: 110px;
+    height: 100%;
+    background: linear-gradient(
+      88.83deg,
+      rgba(255, 255, 255, 0) 15.38%,
+      #ffffff 99%
+    );
+  }
+
+  .swiper-slide {
+    width: 250px;
+    height: initial;
+  }
+
+  &-prev {
+    &--hidden {
+      display: none;
+    }
+  }
+
+  &-next {
+    right: -10px;
+  }
+
+  &-prev,
+  &-next {
+    top: 45%;
+    z-index: 100;
+
+    width: 65px;
+    height: 65px;
+
+    border-radius: 50%;
+
+    @media (hover: hover) {
+      &:hover {
+        background-color: rgba($color: #1e5b60, $alpha: 0.15);
+      }
+    }
+  }
+}

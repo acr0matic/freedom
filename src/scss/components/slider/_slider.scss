@@ -1,0 +1,24 @@
+.swiper {
+  &-button {
+    &-prev,
+    &-next {
+      transition: 0.15s ease;
+    }
+
+    &-prev {
+      left: 0;
+
+      &::after {
+        content: url("../img/icons/control/slider__left.svg");
+      }
+    }
+
+    &-next {
+      right: 15px;
+
+      &::after {
+        content: url("../img/icons/control/slider__next.svg");
+      }
+    }
+  }
+}

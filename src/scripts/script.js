@@ -38,3 +38,26 @@ function SetAnchors(menu) {
 }
 
 SetAnchors(headerLinks);
+
+const newsSlider = new Swiper('.news-slider', {
+  speed: 400,
+  slidesPerView: 'auto',
+  spaceBetween: 30,
+
+  navigation: {
+    nextEl: '.news-slider-next',
+  },
+});
+
+if (window.matchMedia('(max-width: 1400px)').matches) {
+  const advantageSlider = new Swiper('.advantages-slider', {
+    loop: true,
+    speed: 400,
+    slidesPerView: 1,
+
+    navigation: {
+      nextEl: '.advantages-slider__next',
+      prevEl: '.advantages-slider__prev',
+    },
+  });
+}
