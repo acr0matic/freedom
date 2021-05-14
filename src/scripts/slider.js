@@ -61,6 +61,37 @@ const aboutSlider = new Swiper('.about-slider', {
   },
 });
 
+const dateList = [];
+const historySlider = new Swiper('.history-slider', {
+  speed: 400,
+  simulateTouch: false,
+  spaceBetween: 50,
+
+  on: {
+    init() {
+      const wrapper = document.querySelector('.history-slider');
+      const slides = wrapper.querySelectorAll('.swiper-slide');
+      slides.forEach((slide) => {
+        dateList.push(slide.getAttribute('data-title'));
+      });
+    },
+
+    slideChange() {
+      choices.setChoiceByValue(dateList[historySlider.realIndex]);
+    }
+  },
+
+  pagination: {
+    el: '.history-pagination',
+    clickable: true,
+
+    renderBullet(index, className) {
+      return `<span class="${className}"><time>${dateList[index]}</time></span>`;
+    },
+  },
+});
+
+
 const projectSlideContainer = document.querySelector('.project-slider');
 const projectSlider = new Swiper(projectSlideContainer, {
   loop: true,

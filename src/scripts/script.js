@@ -14,3 +14,16 @@ function SetAnchors(menu) {
 }
 
 SetAnchors(headerLinks);
+
+const selectList = document.querySelector('[data-trigger]');
+let choises = null;
+if (selectList) choices = new Choices('[data-trigger]', {
+  searchEnabled: false,
+  itemSelectText: 'Выбрать',
+});
+
+selectList.addEventListener('choice', (e) => {
+  const index = e.detail.choice.id
+
+  historySlider.slideTo(index - 1)
+});

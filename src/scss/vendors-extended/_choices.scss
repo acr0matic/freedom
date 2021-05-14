@@ -1,0 +1,73 @@
+.choices[data-type*="select-one"].is-open:after {
+  transform: rotate(180deg);
+}
+
+.is-open {
+  .choices::after {
+    margin-bottom: 0 !important;
+  }
+
+  .choices__inner {
+    border-radius: 12px !important;
+  }
+}
+
+.choices {
+  margin-right: auto;
+  margin-left: 32px;
+
+  &::after {
+    content: url("../img/icons/control/arrow__down.svg") !important;
+    top: 28px !important;
+    right: 18px !important;
+
+    width: initial !important;
+    height: initial !important;
+
+    margin-top: 0 !important;
+
+    border: none !important;
+    transition: 0.15s ease;
+  }
+
+  &__inner {
+    box-sizing: border-box;
+
+    min-width: 175px;
+    min-height: initial;
+
+    border: 3px solid $palette-cyan;
+    border-radius: 12px;
+
+    padding-left: 25px;
+    padding-right: 15px;
+
+    background-color: transparent;
+    box-shadow: $shadow;
+
+    transition: 0.15s ease;
+
+    @include breakpoint($breakpoint-tablet) {
+    }
+  }
+
+  &__list {
+    &--single {
+      padding-left: 0;
+      padding-bottom: 0;
+    }
+
+    &--dropdown {
+      z-index: 100;
+      top: 105%;
+    }
+  }
+
+  &__item {
+    font-size: 40px;
+    font-family: Geometria, sans-serif;
+    font-weight: $weight-Bold;
+
+    color: $text-black;
+  }
+}

@@ -1,0 +1,31 @@
+#history {
+  .container {
+    position: relative;
+    height: calc(100% - 125px);
+
+    @media screen and (min-height: 910px) {
+      height: calc(100% - 165px);
+    }
+  }
+}
+
+.history {
+  &__slider {
+  }
+
+  &__picture {
+    display: block;
+    width: 100%;
+    height: 400px;
+
+    @media screen and (min-height: 800px) {
+      height: 465px;
+    }
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
