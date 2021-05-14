@@ -45,7 +45,6 @@ if (window.matchMedia('(max-width: 1400px)').matches) {
   });
 }
 
-sectionSlider.mousewheel.disable();
 
 const aboutSlider = new Swiper('.about-slider', {
   speed: 400,
@@ -54,9 +53,12 @@ const aboutSlider = new Swiper('.about-slider', {
   spaceBetween: 50,
 
   on: {
+    slideChange() {
+      sectionSlider.mousewheel.disable();
+    },
+
     slideChangeTransitionEnd() {
-      if (aboutSlider.isEnd) sectionSlider.mousewheel.enable();
-      else sectionSlider.mousewheel.disable();
+      if (aboutSlider.isBeginning || aboutSlider.isEnd) sectionSlider.mousewheel.enable()
     },
   },
 });

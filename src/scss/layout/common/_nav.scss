@@ -2,6 +2,12 @@
   &--header {
     position: relative;
     left: -20px;
+
+    .nav__item {
+      &:not(:last-child) {
+        margin-right: 5px;
+      }
+    }
   }
 
   &--inverted {
@@ -19,6 +25,8 @@
 
     padding: 4px 16px 6px 16px;
     transition: 0.15s ease;
+
+    cursor: pointer;
 
     &--active {
       border-color: $palette-cyan;
