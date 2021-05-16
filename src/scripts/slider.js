@@ -45,6 +45,13 @@ if (window.matchMedia('(max-width: 1400px)').matches) {
   });
 }
 
+const mapSlider = new Swiper('.map-slider', {
+  speed: 400,
+  spaceBetween: 40,
+  slidesPerView: 1,
+  simulateTouch: false,
+});
+
 
 const aboutSlider = new Swiper('.about-slider', {
   speed: 400,
@@ -92,7 +99,6 @@ const historySlider = new Swiper('.history-slider', {
     },
   },
 });
-
 
 const projectSlideContainer = document.querySelector('.project-slider');
 const projectSlider = new Swiper(projectSlideContainer, {

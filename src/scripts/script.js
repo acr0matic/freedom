@@ -39,3 +39,11 @@ aboutPlan.forEach(item => {
     item.classList.toggle('about-plan__item--active');
   });
 });
+
+tippy('[data-tippy-content]', {
+  placement: 'top',
+  allowHTML: true,
+  maxWidth: 300,
+  theme: 'freedom',
+});
+
