@@ -27,3 +27,15 @@ selectList.addEventListener('choice', (e) => {
 
   historySlider.slideTo(index - 1)
 });
+
+const aboutPlan = document.querySelectorAll('.about-plan__item');
+aboutPlan.forEach(item => {
+  item.addEventListener('click', (e) => {
+    aboutPlan.forEach(element => {
+      if (e.currentTarget !== element)
+        element.classList.remove('about-plan__item--active');
+    });
+
+    item.classList.toggle('about-plan__item--active');
+  });
+});

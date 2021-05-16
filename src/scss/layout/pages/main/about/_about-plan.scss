@@ -1,0 +1,156 @@
+.about-plan {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__background {
+    position: absolute;
+    top: 52px;
+    left: 0;
+
+    width: 96px;
+
+    @include breakpoint($breakpoint-laptop--large) {
+      top: 25px;
+    }
+  }
+
+  &__image {
+    margin-right: 100px;
+
+    @include breakpoint($breakpoint-laptop--large) {
+      display: none;
+    }
+  }
+
+  &__wrapper {
+    padding-left: 75px;
+    width: 920px;
+
+    @include breakpoint($breakpoint-laptop--large) {
+      width: 100%;
+    }
+  }
+
+  &__container {
+    display: flex;
+
+    width: 100%;
+    padding: 24px 0;
+
+    cursor: pointer;
+  }
+
+  &__item {
+    position: relative;
+    border-radius: 12px;
+
+    box-shadow: $shadow;
+    transition: 0.15s ease;
+
+    &:not(:last-child) {
+      margin-bottom: 48px;
+    }
+
+    @include last(2) {
+      .about-plan__content {
+        top: initial;
+        bottom: 72px;
+
+        border-radius: 12px 12px 0 0;
+      }
+    }
+
+    &--cyan {
+      background-color: $palette-cyan;
+    }
+
+    &--red {
+      background-color: $palette-red;
+    }
+
+    &--yellow {
+      background-color: $palette-yellow;
+    }
+
+    &--purple {
+      background-color: $palette-purple;
+    }
+
+    &--active {
+      border-radius: 12px 12px 0 12px;
+
+      .about-plan__arrow {
+        transform: rotate(90deg);
+      }
+
+      .about-plan__content {
+        visibility: visible;
+        opacity: 1;
+      }
+
+      @include last(2) {
+        border-radius: 12px 0 12px 12px;
+
+        .about-plan__arrow {
+          transform: rotate(-90deg);
+        }
+      }
+    }
+  }
+
+  &__date {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: -30px;
+
+    border-radius: 12px;
+    box-shadow: $shadow;
+
+    background-color: $palette-white;
+    color: $palette-cyan;
+
+    padding: 12px 32px;
+
+    font-size: $font-title-4;
+    font-family: Geometria, sans-serif;
+    font-weight: 700;
+
+    white-space: nowrap;
+    transform: translateY(-50%);
+  }
+
+  &__title {
+    margin-left: 220px;
+    color: $palette-white;
+  }
+
+  &__arrow {
+    margin-left: auto;
+    margin-right: 25px;
+
+    transition: 0.15s ease;
+  }
+
+  &__content {
+    position: absolute;
+    z-index: 3;
+    top: 72px;
+    right: 0;
+
+    width: 675px;
+    padding: 32px;
+
+    border-radius: 0 0 12px 12px;
+
+    background-color: $palette-white;
+    transition: 0.15s ease;
+
+    box-shadow: $shadow;
+
+    visibility: hidden;
+    opacity: 0;
+  }
+}

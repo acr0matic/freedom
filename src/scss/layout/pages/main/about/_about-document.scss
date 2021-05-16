@@ -1,0 +1,19 @@
+.about-document {
+  margin-top: 15px;
+  padding-left: 75px;
+
+  @include breakpoint($breakpoint-laptop--large) {
+    margin-top: 75px;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 25px;
+    }
+  }
+
+  &__link {
+    color: $palette-cyan;
+    font-size: $font-text-2;
+  }
+}
