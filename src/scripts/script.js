@@ -28,17 +28,43 @@ selectList.addEventListener('choice', (e) => {
   historySlider.slideTo(index - 1)
 });
 
-const aboutPlan = document.querySelectorAll('.about-plan__item');
-aboutPlan.forEach(item => {
-  item.addEventListener('click', (e) => {
-    aboutPlan.forEach(element => {
-      if (e.currentTarget !== element)
-        element.classList.remove('about-plan__item--active');
-    });
+if (window.matchMedia('(min-width: 991px)').matches) {
+  const aboutPlan = document.querySelectorAll('.about-plan__item');
+  aboutPlan.forEach(item => {
+    item.addEventListener('click', (e) => {
+      aboutPlan.forEach(element => {
+        if (e.currentTarget !== element)
+          element.classList.remove('about-plan__item--active');
+      });
 
-    item.classList.toggle('about-plan__item--active');
+      item.classList.toggle('about-plan__item--active');
+    });
   });
-});
+}
+
+else {
+  const aboutPlanItems = document.querySelectorAll('.about-plan__item');
+  const modal = document.getElementById('modal-info');
+  const modalTitle = modal.querySelector('.modal__title');
+  const modalHeading = modal.querySelector('.modal__heading');
+  const modalContent = modal.querySelector('.modal__description');
+
+  aboutPlanItems.forEach((item, index) => {
+    const title = item.querySelector('.about-plan__title').innerHTML;
+    const content = item.querySelector('.about-plan__content').innerHTML;
+
+    item.addEventListener('click', () => {
+      modalTitle.innerHTML = `${index + 1} этап`
+      modalHeading.innerHTML = title;
+      modalContent.innerHTML = content;
+
+      MicroModal.show('modal-info', {
+        disableFocus: true,
+        awaitCloseAnimation: true,
+      });
+    });
+  });
+}
 
 tippy('[data-tippy-content]', {
   placement: 'top',
@@ -47,10 +73,15 @@ tippy('[data-tippy-content]', {
   theme: 'freedom',
 });
 
+MicroModal.init({
+  disableFocus: true,
+  awaitCloseAnimation: true,
+});
+
 const mobileMenu = document.querySelector('#mobile-menu .mobile-menu');
 const headerMobile = document.querySelector('.header .header__mobile');
 const mobileMenuButton = headerMobile.querySelector('img');
-const moblieClose = mobileMenu.querySelector('.mobile-menu__close');
+const mobileClose = mobileMenu.querySelector('.mobile-menu__close');
 const mobileNav = mobileMenu.querySelectorAll('.nav__link');
 
 mobileMenuButton.addEventListener('click', () => {
@@ -68,6 +99,6 @@ mobileNav.forEach((item) => {
   });
 });
 
-moblieClose.addEventListener('click', () => {
+mobileClose.addEventListener('click', () => {
   mobileMenu.classList.toggle('mobile-menu--open');
 });
