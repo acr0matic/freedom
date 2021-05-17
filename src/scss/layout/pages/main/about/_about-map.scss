@@ -4,6 +4,14 @@
     box-shadow: $shadow;
     overflow: hidden;
 
+    @include breakpoint($breakpoint-tablet--large) {
+      display: flex;
+      flex-direction: column-reverse;
+
+      border-radius: none;
+      box-shadow: none;
+    }
+
     &--1 {
       .about-map__tooltip {
         &:nth-child(1) {
@@ -43,6 +51,8 @@
     object-fit: cover;
 
     @include breakpoint($breakpoint-tablet--large) {
+      border-radius: 12px;
+      box-shadow: $shadow;
       height: 200px;
     }
 
@@ -63,9 +73,20 @@
     border-radius: 0 12px;
     background-color: $palette-white;
 
+    margin-bottom: 15px;
     padding: 12px 56px;
 
     color: $palette-cyan;
+
+    @include breakpoint($breakpoint-tablet--large) {
+      position: static;
+
+      color: $text-black;
+      padding: 0;
+      background-color: transparent;
+
+      font-size: $font-title-4;
+    }
   }
 
   &__next {
@@ -82,6 +103,10 @@
     @include breakpoint($breakpoint-laptop--large) {
       right: 24px;
       bottom: 24px;
+    }
+
+    @include breakpoint($breakpoint-tablet--large) {
+      display: none;
     }
   }
 

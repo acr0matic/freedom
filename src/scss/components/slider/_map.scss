@@ -1,3 +1,7 @@
 .map-slider {
   padding: 15px;
+
+  @include breakpoint($breakpoint-tablet--large) {
+    padding: 0;
+  }
 }

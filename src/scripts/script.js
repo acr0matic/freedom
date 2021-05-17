@@ -47,3 +47,27 @@ tippy('[data-tippy-content]', {
   theme: 'freedom',
 });
 
+const mobileMenu = document.querySelector('#mobile-menu .mobile-menu');
+const headerMobile = document.querySelector('.header .header__mobile');
+const mobileMenuButton = headerMobile.querySelector('img');
+const moblieClose = mobileMenu.querySelector('.mobile-menu__close');
+const mobileNav = mobileMenu.querySelectorAll('.nav__link');
+
+mobileMenuButton.addEventListener('click', () => {
+  mobileMenu.classList.toggle('mobile-menu--open');
+
+  headerMobile.classList.toggle('header__mobile--fixed');
+});
+
+mobileNav.forEach((item) => {
+  item.addEventListener('click', () => {
+    mobileMenu.classList.toggle('mobile-menu--open');
+    headerMobile.classList.toggle('header__mobile--fixed');
+
+    Scroll(item);
+  });
+});
+
+moblieClose.addEventListener('click', () => {
+  mobileMenu.classList.toggle('mobile-menu--open');
+});
