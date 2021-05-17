@@ -3,7 +3,7 @@
 
 .news {
   &__header {
-    @include breakpoint($breakpoint-laptop--large) {
+    @include breakpoint($breakpoint-tablet--large) {
       flex-direction: column;
     }
   }
@@ -22,7 +22,7 @@
       width: 460px;
     }
 
-    @include breakpoint($breakpoint-laptop--large) {
+    @include breakpoint($breakpoint-tablet--large) {
       width: initial;
 
       padding-left: 0;
@@ -42,7 +42,7 @@
       justify-content: center;
     }
 
-    @include breakpoint($breakpoint-laptop--large) {
+    @include breakpoint($breakpoint-tablet--large) {
       justify-content: flex-start;
     }
   }

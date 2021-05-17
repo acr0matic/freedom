@@ -7,7 +7,7 @@
   }
 
   .swiper-wrapper {
-    @include breakpoint($breakpoint-laptop--large) {
+    @include breakpoint($breakpoint-tablet--large) {
       flex-direction: column;
     }
   }
@@ -22,7 +22,7 @@
         margin-right: 0;
       }
 
-      @include breakpoint($breakpoint-laptop--large) {
+      @include breakpoint($breakpoint-tablet--large) {
         margin-bottom: 25px;
       }
     }
