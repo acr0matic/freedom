@@ -1,0 +1,15 @@
+.about-slider {
+  @include breakpoint($breakpoint-tablet--large) {
+    overflow: visible;
+  }
+
+  & > .swiper-wrapper {
+    @include breakpoint($breakpoint-tablet--large) {
+      flex-direction: column;
+    }
+
+    & > .swiper-slide {
+      margin-bottom: 72px;
+    }
+  }
+}

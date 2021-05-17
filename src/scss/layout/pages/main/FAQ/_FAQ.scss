@@ -24,21 +24,32 @@
       @include breakpoint($breakpoint-laptop--large) {
         display: block;
       }
+
+      @include breakpoint($breakpoint-tablet--large) {
+        display: none;
+      }
     }
   }
 
   &__wrapper {
     @include breakpoint($breakpoint-laptop--large) {
       max-height: 500px;
-      overflow: auto;
 
       padding-right: 20px;
       padding-left: 20px;
     }
 
+    @include breakpoint($breakpoint-tablet--large) {
+      max-height: initial;
+    }
+
     .col-12:last-child {
       @include breakpoint($breakpoint-laptop--large) {
         padding-bottom: 50px;
+      }
+
+      @include breakpoint($breakpoint-tablet--large) {
+        padding-bottom: 0;
       }
     }
   }

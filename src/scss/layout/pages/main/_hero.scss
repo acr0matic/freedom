@@ -22,9 +22,21 @@
 
   padding-top: 195px;
 
+  @include breakpoint($breakpoint-tablet--large) {
+    padding-top: 110px;
+  }
+
   &__content {
     color: $palette-white;
     text-align: center;
+
+    @include breakpoint($breakpoint-tablet--large) {
+      text-align: left;
+
+      br {
+        display: none;
+      }
+    }
   }
 
   &__title {
@@ -38,6 +50,13 @@
   &__action {
     display: flex;
     align-items: center;
+    justify-content: center;
+
+    width: 100%;
+
+    @include breakpoint($breakpoint-tablet--large) {
+      flex-direction: column;
+    }
   }
 
   &__partners {

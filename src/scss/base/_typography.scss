@@ -9,4 +9,9 @@ body {
 p {
   font-size: $font-text-1;
   line-height: 125%;
+
+  @include breakpoint($breakpoint-tablet--large) {
+    font-size: $font-text-3;
+    line-height: 150%;
+  }
 }

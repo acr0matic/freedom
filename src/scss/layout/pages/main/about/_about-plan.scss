@@ -14,6 +14,10 @@
     @include breakpoint($breakpoint-laptop--large) {
       top: 25px;
     }
+
+    @include breakpoint($breakpoint-tablet--large) {
+      display: none;
+    }
   }
 
   &__image {
@@ -29,6 +33,7 @@
     width: 920px;
 
     @include breakpoint($breakpoint-laptop--large) {
+      padding-left: 45px;
       width: 100%;
     }
   }
@@ -40,6 +45,23 @@
     padding: 24px 0;
 
     cursor: pointer;
+
+    @include breakpoint($breakpoint-tablet--large) {
+      flex-direction: column;
+      padding: 0;
+    }
+
+    &::after {
+      content: "Подробнее";
+      display: none;
+      margin-top: 25px;
+
+      color: $palette-cyan;
+
+      @include breakpoint($breakpoint-tablet--large) {
+        display: block;
+      }
+    }
   }
 
   &__item {
@@ -51,6 +73,10 @@
 
     &:not(:last-child) {
       margin-bottom: 48px;
+
+      @include breakpoint($breakpoint-tablet--large) {
+        margin-bottom: 80px;
+      }
     }
 
     @include last(2) {
@@ -60,6 +86,11 @@
 
         border-radius: 12px 12px 0 0;
       }
+    }
+
+    @include breakpoint($breakpoint-tablet--large) {
+      background-color: transparent !important;
+      box-shadow: none;
     }
 
     &--cyan {
@@ -120,11 +151,29 @@
 
     white-space: nowrap;
     transform: translateY(-50%);
+
+    @include breakpoint($breakpoint-tablet--large) {
+      position: static;
+      padding: 0;
+
+      color: $text-black;
+      font-size: $font-text-2;
+
+      background-color: transparent;
+      box-shadow: none;
+    }
   }
 
   &__title {
     margin-left: 220px;
     color: $palette-white;
+
+    @include breakpoint($breakpoint-tablet--large) {
+      margin-left: 0;
+      color: $text-black;
+
+      font-size: $font-text-1;
+    }
   }
 
   &__arrow {
@@ -132,6 +181,10 @@
     margin-right: 25px;
 
     transition: 0.15s ease;
+
+    @include breakpoint($breakpoint-tablet--large) {
+      display: none;
+    }
   }
 
   &__content {

@@ -10,7 +10,6 @@
     }
   }
 
-
   &__picture {
     position: relative;
 
@@ -20,10 +19,24 @@
     object-fit: cover;
 
     border-radius: 12px;
+
+    @include breakpoint($breakpoint-tablet--large) {
+      height: 200px;
+    }
+
+    @include breakpoint($breakpoint-mobile--medium) {
+      height: 170px;
+    }
+
+    @include breakpoint($breakpoint-mobile) {
+      height: 130px;
+    }
   }
 
   &__content {
-
+    @include breakpoint($breakpoint-tablet--large) {
+      display: none;
+    }
   }
 
   &__tooltip {

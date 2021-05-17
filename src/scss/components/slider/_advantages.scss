@@ -2,6 +2,16 @@
   padding-top: 16px;
   padding-bottom: 16px;
 
+  @include breakpoint($breakpoint-laptop--large) {
+    margin: 0;
+  }
+
+  .swiper-wrapper {
+    @include breakpoint($breakpoint-laptop--large) {
+      flex-direction: column;
+    }
+  }
+
   .swiper-slide {
     width: initial;
 
@@ -10,6 +20,10 @@
 
       @include breakpoint($breakpoint-laptop--large) {
         margin-right: 0;
+      }
+
+      @include breakpoint($breakpoint-laptop--large) {
+        margin-bottom: 25px;
       }
     }
 
@@ -34,6 +48,10 @@
 
     @include breakpoint($breakpoint-laptop--large) {
       display: block;
+    }
+
+    @include breakpoint($breakpoint-tablet--large) {
+      display: none;
     }
   }
 

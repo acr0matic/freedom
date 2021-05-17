@@ -1,4 +1,9 @@
 .swiper {
+  &-wrapper {
+    @include breakpoint($breakpoint-tablet--large) {
+      box-sizing: border-box;
+    }
+  }
   &-button {
     &-prev,
     &-next {

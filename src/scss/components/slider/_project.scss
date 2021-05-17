@@ -1,0 +1,7 @@
+.project-slider {
+  .swiper-slide {
+    @include breakpoint($breakpoint-tablet--large) {
+      width: 85%;
+    }
+  }
+}

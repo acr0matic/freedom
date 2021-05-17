@@ -6,6 +6,10 @@
     margin-top: 75px;
   }
 
+  @include breakpoint($breakpoint-tablet--large) {
+    padding-left: 0;
+  }
+
   &__item {
     &:not(:last-child) {
       margin-bottom: 25px;

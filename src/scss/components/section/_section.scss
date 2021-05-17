@@ -1,11 +1,19 @@
 .section {
   height: 100vh;
 
+  @include breakpoint($breakpoint-tablet--large) {
+    height: initial;
+  }
+
   .container {
     padding-top: 125px;
 
     @media screen and (min-height: 910px) {
       padding-top: 165px;
+    }
+
+    @include breakpoint($breakpoint-tablet--large) {
+      padding-top: 95px;
     }
   }
 
@@ -15,6 +23,11 @@
     justify-content: space-between;
 
     margin-bottom: 65px;
+
+    @include breakpoint($breakpoint-tablet--large) {
+      justify-content: center;
+      margin-bottom: 25px;
+    }
 
     .section__title {
       margin-bottom: 0;
@@ -32,6 +45,14 @@
 
     color: $palette-cyan;
 
+    @include breakpoint($breakpoint-tablet--large) {
+      display: block;
+      margin-bottom: 25px;
+
+      text-align: center;
+      font-size: $font-title-3;
+    }
+
     &::before {
       content: "";
       display: block;
@@ -43,10 +64,18 @@
       margin-right: 25px;
 
       background-color: $palette-cyan;
+
+      @include breakpoint($breakpoint-tablet--large) {
+        display: none;
+      }
     }
   }
 
   &__text {
     font-size: $font-text-1;
+
+    @include breakpoint($breakpoint-tablet--large) {
+      font-size: $font-text-3;
+    }
   }
 }

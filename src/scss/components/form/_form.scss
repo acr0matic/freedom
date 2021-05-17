@@ -1,3 +1,7 @@
 .form {
   max-width: 400px;
+
+  @include breakpoint($breakpoint-tablet--large) {
+    max-width: 100%;
+  }
 }

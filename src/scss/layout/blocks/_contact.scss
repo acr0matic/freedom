@@ -2,6 +2,14 @@
   border-radius: 12px;
   background-color: $palette-cyan;
 
+  @include breakpoint($breakpoint-laptop--large) {
+    width: 100vw;
+    margin-left: -12px;
+
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
   &__wrapper {
     padding: 48px;
   }
@@ -13,6 +21,10 @@
 
   &__link {
     font-size: $font-title-4;
+
+    @include breakpoint($breakpoint-laptop--large) {
+      font-size: $font-text-3;
+    }
 
     &:not(:last-child) {
       margin-bottom: 35px;

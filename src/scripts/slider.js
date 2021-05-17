@@ -32,7 +32,7 @@ const newsSlider = new Swiper('.news-slider', {
   },
 });
 
-if (window.matchMedia('(max-width: 1400px)').matches) {
+if (window.matchMedia('(max-width: 1400px)').matches && window.matchMedia('(min-width: 991px)').matches) {
   const advantageSlider = new Swiper('.advantages-slider', {
     loop: true,
     speed: 400,
@@ -53,22 +53,24 @@ const mapSlider = new Swiper('.map-slider', {
 });
 
 
-const aboutSlider = new Swiper('.about-slider', {
-  speed: 400,
-  mousewheel: true,
-  simulateTouch: false,
-  spaceBetween: 50,
+if (window.matchMedia('(min-width: 991px)').matches) {
+  const aboutSlider = new Swiper('.about-slider', {
+    speed: 400,
+    mousewheel: true,
+    simulateTouch: false,
+    spaceBetween: 50,
 
-  on: {
-    slideChange() {
-      sectionSlider.mousewheel.disable();
-    },
+    on: {
+      slideChange() {
+        sectionSlider.mousewheel.disable();
+      },
 
-    slideChangeTransitionEnd() {
-      if (aboutSlider.isBeginning || aboutSlider.isEnd) sectionSlider.mousewheel.enable()
+      slideChangeTransitionEnd() {
+        if (aboutSlider.isBeginning || aboutSlider.isEnd) sectionSlider.mousewheel.enable()
+      },
     },
-  },
-});
+  });
+}
 
 const dateList = [];
 const historySlider = new Swiper('.history-slider', {
@@ -104,10 +106,16 @@ const projectSlideContainer = document.querySelector('.project-slider');
 const projectSlider = new Swiper(projectSlideContainer, {
   loop: true,
   speed: 400,
-  slidesPerView: 1,
+  slidesPerView: 'auto',
   spaceBetween: 15,
   simulateTouch: false,
   loopedSlides: 5,
+
+  breakpoints: {
+    991: {
+      slidesPerView: 1,
+    },
+  },
 });
 
 const projectThumbContainer = document.querySelector('.project-thumb');
