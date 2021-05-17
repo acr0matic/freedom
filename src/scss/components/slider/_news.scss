@@ -31,8 +31,13 @@
   }
 
   &-prev {
+    left: -10px;
+    opacity: 1;
+    visibility: visible;
+
     &--hidden {
-      display: none;
+      opacity: 0;
+      visibility: hidden;
     }
   }
 

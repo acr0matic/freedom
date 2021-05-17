@@ -1,14 +1,21 @@
 /* global Swiper */
 
-const headerNavigation = document.querySelector('#header .nav--header');
+const header = document.getElementById('header');
+const headerNavigation = header.querySelector('.nav--header');
 const headerLinks = headerNavigation.querySelectorAll('.nav__item');
-const headerIcons = document.querySelectorAll('#header .social__icon');
+const headerIcons = header.querySelectorAll('.social__icon');
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY >= header.offsetHeight) header.classList.add('header-scroll');
+  else header.classList.remove('header-scroll')
+});
 
 function SetAnchors(menu) {
   menu.forEach((item, index) => {
     item.addEventListener('click', (e) => {
       e.preventDefault();
       sectionSlider.slideTo(index);
+      sectionSlider.mousewheel.enable();
     });
   });
 }
@@ -80,7 +87,7 @@ MicroModal.init({
 
 const mobileMenu = document.querySelector('#mobile-menu .mobile-menu');
 const headerMobile = document.querySelector('.header .header__mobile');
-const mobileMenuButton = headerMobile.querySelector('img');
+const mobileMenuButton = headerMobile.querySelector('.header__burger');
 const mobileClose = mobileMenu.querySelector('.mobile-menu__close');
 const mobileNav = mobileMenu.querySelectorAll('.nav__link');
 
@@ -101,4 +108,21 @@ mobileNav.forEach((item) => {
 
 mobileClose.addEventListener('click', () => {
   mobileMenu.classList.toggle('mobile-menu--open');
+});
+
+
+const hero = document.getElementById('hero');
+const heroPrimary = hero.querySelector('.button.button-primary');
+const heroSecondary = hero.querySelector('.button.button-outline');
+
+heroPrimary.addEventListener('click', () => {
+  const target = document.getElementById('about');
+  if (window.matchMedia('(min-width: 991px)').matches) sectionSlider.slideTo(1);
+  else target.scrollIntoView({ behavior: 'smooth',});
+});
+
+heroSecondary.addEventListener('click', () => {
+  const target = document.getElementById('map');
+  if (window.matchMedia('(min-width: 991px)').matches) sectionSlider.slideTo(1);
+  else target.scrollIntoView({ behavior: 'smooth',});
 });

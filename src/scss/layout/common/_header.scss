@@ -8,6 +8,28 @@
   top: 0;
   left: 0;
   width: 100%;
+
+  transition: 0.15s ease;
+}
+
+.header-scroll {
+  background-color: $palette-white;
+  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.15);
+
+  .link__icon path {
+    fill: $palette-cyan;
+  }
+
+  .header__burger {
+    circle,
+    rect {
+      fill: $palette-cyan;
+    }
+
+    .fix {
+      stroke: $palette-cyan;
+    }
+  }
 }
 
 .header {
@@ -15,6 +37,10 @@
   align-items: center;
 
   padding: 25px 0;
+
+  @include breakpoint($breakpoint-tablet--large) {
+    padding: 12px 0;
+  }
 
   &__nav {
     @include breakpoint($breakpoint-tablet--large) {
@@ -37,9 +63,12 @@
     @include breakpoint($breakpoint-tablet--large) {
       display: block;
     }
+  }
 
-    img {
-      width: 36px;
+  &__burger {
+    rect,
+    circle {
+      transition: 0.15s ease;
     }
   }
 }
