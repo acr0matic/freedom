@@ -3,8 +3,28 @@
     &--1 {
       .about-map__tooltip {
         &:nth-child(1) {
-          top: 60%;
-          left: 50%;
+          top: 40%;
+          left: 39%;
+        }
+
+        &:nth-child(2) {
+          top: 70%;
+          left: 24%;
+        }
+
+        &:nth-child(3) {
+          top: 72%;
+          left: 49%;
+        }
+
+        &:nth-child(4) {
+          top: 71%;
+          left: 11%;
+        }
+
+        &:nth-child(5) {
+          top: 84%;
+          left: 41%;
         }
       }
     }
