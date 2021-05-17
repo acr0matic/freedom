@@ -19,9 +19,12 @@
     margin-bottom: 12px;
     font-size: $font-title-4;
     font-family: Geometria, sans-serif;
+
+    @include breakpoint($breakpoint-mobile--medium) {
+      font-size: $font-text-1;
+    }
   }
 
   &__description {
-
   }
 }

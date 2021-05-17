@@ -44,6 +44,7 @@
 
     @include breakpoint($breakpoint-tablet--large) {
       justify-content: flex-start;
+      font-size: $font-text-2;
     }
   }
 
@@ -114,6 +115,10 @@
     overflow: hidden;
 
     box-shadow: $shadow;
+
+    @include breakpoint($breakpoint-tablet--large) {
+      height: 200px;
+    }
   }
 
   &__info {

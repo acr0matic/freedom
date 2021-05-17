@@ -12,6 +12,10 @@
 
   &__wrapper {
     padding: 48px;
+
+    @include breakpoint($breakpoint-tablet--large) {
+      padding: 32px;
+    }
   }
 
   &__list {

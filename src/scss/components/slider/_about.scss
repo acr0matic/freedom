@@ -8,7 +8,7 @@
       flex-direction: column;
     }
 
-    & > .swiper-slide {
+    & > .swiper-slide:not(:last-child) {
       margin-bottom: 72px;
     }
   }

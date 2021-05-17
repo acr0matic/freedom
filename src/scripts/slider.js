@@ -25,10 +25,16 @@ if (window.matchMedia('(min-width: 991px)').matches) {
 const newsSlider = new Swiper('.news-slider', {
   speed: 400,
   slidesPerView: 'auto',
-  spaceBetween: 30,
+  spaceBetween: 12,
 
   navigation: {
     nextEl: '.news-slider-next',
+  },
+
+  breakpoints: {
+    991: {
+      spaceBetween: 30,
+    },
   },
 });
 

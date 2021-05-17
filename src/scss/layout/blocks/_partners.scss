@@ -8,9 +8,33 @@
     &:hover {
       opacity: 0.7;
     }
+
+    @include breakpoint($breakpoint-tablet--large) {
+      &:nth-child(1) {
+        .partners__icon {
+          width: 32px;
+        }
+      }
+
+      &:nth-child(2) {
+        .partners__icon {
+          width: 36px;
+        }
+      }
+
+      &:nth-child(3) {
+        .partners__icon {
+          width: 60px;
+        }
+      }
+      &:nth-child(4) {
+        .partners__icon {
+          width: 72px;
+        }
+      }
+    }
   }
 
   &__icon {
-
   }
 }

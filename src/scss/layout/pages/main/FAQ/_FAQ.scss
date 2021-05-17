@@ -42,6 +42,8 @@
 
     @include breakpoint($breakpoint-tablet--large) {
       max-height: initial;
+      overflow: visible;
+      padding: 0;
     }
 
     .col-12:last-child {
