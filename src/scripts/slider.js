@@ -53,8 +53,9 @@ const mapSlider = new Swiper('.map-slider', {
 });
 
 
+let aboutSlider = null;
 if (window.matchMedia('(min-width: 991px)').matches) {
-  const aboutSlider = new Swiper('.about-slider', {
+  aboutSlider = new Swiper('.about-slider', {
     speed: 400,
     mousewheel: true,
     simulateTouch: false,

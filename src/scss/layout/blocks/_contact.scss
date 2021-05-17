@@ -2,7 +2,7 @@
   border-radius: 12px;
   background-color: $palette-cyan;
 
-  @include breakpoint($breakpoint-laptop--large) {
+  @include breakpoint($breakpoint-tablet--large) {
     width: 100vw;
     margin-left: -12px;
 
