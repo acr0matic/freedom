@@ -33,7 +33,7 @@
     width: 920px;
 
     @include breakpoint($breakpoint-laptop--large) {
-      padding-left: 45px;
+      padding-left: 55px;
       width: 100%;
     }
   }
@@ -79,6 +79,12 @@
       }
     }
 
+    &:last-child {
+      &::after {
+        height: 110px;
+      }
+    }
+
     @include last(2) {
       .about-plan__content {
         top: initial;
@@ -93,20 +99,71 @@
       box-shadow: none;
     }
 
+    &::before {
+      @include breakpoint($breakpoint-tablet--large) {
+        content: "";
+        position: absolute;
+        top: -15px;
+        left: -55px;
+
+        display: block;
+        width: 32px;
+        height: 32px;
+
+        border-radius: 50%;
+        box-shadow: 0 4.74159px 12.6442px rgba(0, 0, 0, 0.15);
+      }
+    }
+
+    &::after {
+      @include breakpoint($breakpoint-tablet--large) {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -41px;
+
+        display: block;
+        width: 4px;
+        height: 200px;
+
+        box-shadow: 0 4.74159px 12.6442px rgba(0, 0, 0, 0.15);
+      }
+    }
+
     &--cyan {
       background-color: $palette-cyan;
+
+      &::after,
+      &::before {
+        background-color: $palette-cyan;
+      }
     }
 
     &--red {
       background-color: $palette-red;
+
+      &::after,
+      &::before {
+        background-color: $palette-red;
+      }
     }
 
     &--yellow {
       background-color: $palette-yellow;
+
+      &::after,
+      &::before {
+        background-color: $palette-yellow;
+      }
     }
 
     &--purple {
       background-color: $palette-purple;
+
+      &::after,
+      &::before {
+        background-color: $palette-purple;
+      }
     }
 
     &--active {
