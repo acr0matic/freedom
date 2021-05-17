@@ -1,5 +1,9 @@
 .about-map {
   &__item {
+    border-radius: 12px;
+    box-shadow: $shadow;
+    overflow: hidden;
+
     &--1 {
       .about-map__tooltip {
         &:nth-child(1) {
@@ -38,8 +42,6 @@
 
     object-fit: cover;
 
-    border-radius: 12px;
-
     @include breakpoint($breakpoint-tablet--large) {
       height: 200px;
     }
@@ -50,6 +52,36 @@
 
     @include breakpoint($breakpoint-mobile) {
       height: 130px;
+    }
+  }
+
+  &__title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    border-radius: 0 12px;
+    background-color: $palette-white;
+
+    padding: 12px 56px;
+
+    color: $palette-cyan;
+  }
+
+  &__next {
+    position: absolute;
+    right: 32px;
+    bottom: 32px;
+
+    color: $palette-white;
+    text-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+
+    font-size: $font-title-4;
+    cursor: pointer;
+
+    @include breakpoint($breakpoint-laptop--large) {
+      right: 24px;
+      bottom: 24px;
     }
   }
 
