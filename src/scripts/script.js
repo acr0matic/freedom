@@ -8,7 +8,9 @@ const headerIcons = header.querySelectorAll('.social__icon');
 const isNews = document.querySelector('.news-page');
 
 if (isNews) {
-  header.classList.add('header-scroll')
+  if (window.matchMedia('(max-width: 991px)').matches)
+    header.classList.add('header-scroll');
+
   headerNavigation.classList.remove('nav--inverted');
   headerIcons.forEach((icon) => icon.classList.remove('link__icon--inverted'));
 }
