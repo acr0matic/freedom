@@ -17,9 +17,6 @@
   position: relative;
   background-color: $palette-white;
 
-  max-width: 360px;
-  padding: 20px;
-
   border-radius: 12px;
 }
 
@@ -27,18 +24,11 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-
-  margin-bottom: 25px;
 }
 
 .modal__title {
   font-size: $font-text-1;
   color: $palette-cyan;
-}
-
-.modal__heading {
-  margin-bottom: 10px;
-  font-size: $font-title-4;
 }
 
 .modal__close {

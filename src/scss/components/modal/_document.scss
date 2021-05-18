@@ -1,0 +1,16 @@
+.modal-document {
+  .modal__header {
+    margin-bottom: 38px;
+  }
+
+  .modal__title {
+    font-size: $font-title-2;
+  }
+
+  .modal__container {
+    width: 100%;
+    max-width: 1080px;
+
+    padding: 32px 48px;
+  }
+}

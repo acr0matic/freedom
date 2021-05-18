@@ -37,7 +37,16 @@
   }
 
   &__link {
+    display: flex;
+    align-items: flex-start;
+
     color: $palette-cyan;
     font-size: $font-text-2;
+
+    line-height: 150%;
+
+    svg {
+      flex-shrink: 0;
+    }
   }
 }
