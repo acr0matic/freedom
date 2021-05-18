@@ -177,10 +177,16 @@
     box-shadow: $shadow;
 
     @include breakpoint($breakpoint-laptop) {
+      display: none;
+    }
+
+    @media screen and (max-width: 1200px) and (min-height: 770px) {
       position: absolute;
       z-index: 2;
       bottom: -100px;
       left: 0;
+
+      display: block;
 
       height: 100px;
     }

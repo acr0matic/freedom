@@ -57,12 +57,20 @@
 
     object-fit: cover;
 
-    @include breakpoint($breakpoint-laptop) {
+    @include breakpoint($breakpoint-laptop and min-height 500px) {
       height: 380px;
     }
 
     @include breakpoint($breakpoint-laptop and min-height 700px) {
       height: 450px;
+    }
+
+    @include breakpoint($breakpoint-laptop and min-height 800px) {
+      height: 520px;
+    }
+
+    @include breakpoint($breakpoint-laptop and min-height 900px) {
+      height: 600px;
     }
 
     @include breakpoint($breakpoint-tablet--large) {
