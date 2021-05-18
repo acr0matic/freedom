@@ -105,10 +105,6 @@ tippy('.about-map__tooltip[data-tippy-content]', {
   theme: 'freedom',
 });
 
-MicroModal.init({
-  disableFocus: true,
-  awaitCloseAnimation: true,
-});
 
 const mobileMenu = document.querySelector('#mobile-menu .mobile-menu');
 const headerMobile = document.querySelector('.header .header__mobile');
@@ -153,6 +149,11 @@ if (hero) {
     else target.scrollIntoView({ behavior: 'smooth', });
   });
 }
+
+MicroModal.init({
+  disableFocus: true,
+  awaitCloseAnimation: true,
+});
 
 const forms = document.querySelectorAll('form');
 forms.forEach(form => new Form(form));

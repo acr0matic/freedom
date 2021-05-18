@@ -1,0 +1,42 @@
+.modal-accept {
+  .modal__close {
+    margin-left: auto;
+  }
+
+  .modal__container {
+    width: 100%;
+    max-width: 820px;
+    padding: 32px;
+
+    @include breakpoint($breakpoint-tablet--large) {
+      width: 95%;
+      max-width: 360px;
+      padding: 20px;
+    }
+  }
+
+  .modal__header {
+    margin-bottom: 45px;
+
+    @include breakpoint($breakpoint-tablet--large) {
+      margin-bottom: 20px;
+    }
+  }
+
+  .modal__heading {
+    margin-bottom: 30px;
+    font-size: $font-title-2;
+    color: $palette-cyan;
+
+    text-align: center;
+
+    @include breakpoint($breakpoint-tablet--large) {
+      font-size: $font-title-4;
+      text-align: left;
+
+      margin-bottom: 0;
+
+      color: $text-black;
+    }
+  }
+}

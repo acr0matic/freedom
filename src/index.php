@@ -1161,6 +1161,27 @@
 </div>
 <!-- /.modal -->
 
+<div class="modal modal-accept micromodal-slide" id="modal-accept">
+  <div class="modal__overlay" data-micromodal-close>
+    <div class="modal__container">
+      <div class="modal__header">
+        <button class="modal__close" data-micromodal-close></button>
+      </div>
+
+      <div class="modal__content">
+        <div class="modal__wrapper">
+          <h3 class="modal__heading">Спасибо! Свободный станет лучше.</h3>
+        </div>
+        <!-- /.modal__wrapper -->
+      </div>
+      <!-- /.modal__content -->
+    </div>
+    <!-- /.modal__container -->
+  </div>
+  <!-- /.modal__overlay -->
+</div>
+<!-- /.modal -->
+
 <div class="modal modal-document micromodal-slide" id="modal-document">
   <div class="modal__overlay" data-micromodal-close>
     <div class="modal__container">

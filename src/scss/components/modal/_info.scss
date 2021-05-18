@@ -10,6 +10,10 @@
   .modal__container {
     max-width: 360px;
     padding: 20px;
+
+    @include breakpoint($breakpoint-tablet--large) {
+      width: 95%;
+    }
   }
 
   .modal__heading {

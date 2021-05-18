@@ -134,8 +134,14 @@ class Form {
         body: data,
       });
 
-      if (response.ok)
+      if (response.ok) {
         if (this.redirect) window.location.href = this.redirect;
+
+        MicroModal.show('modal-accept', {
+          disableFocus: true,
+          awaitCloseAnimation: true,
+        });
+      }
 
       let result = await response.json();
       console.log(result);

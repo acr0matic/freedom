@@ -5,3 +5,14 @@
     }
   }
 }
+
+.project-thumb {
+  .about-project__picture {
+  }
+
+  .swiper-slide-active {
+    .about-project__picture {
+      border: 3px solid $palette-cyan;
+    }
+  }
+}
