@@ -914,24 +914,27 @@
                   </p>
 
                   <div class="feedback__form">
-                    <form action="" class="form">
+                    <form action="php/test.php" class="form" data-target="feedback">
                       <div class="input mb-3">
-                        <input type="text" class="input__field" placeholder="Как вас зовут">
+                        <input name="user_name" data-required type="text" class="input__field" placeholder="Как вас зовут">
+                        <img data-tippy-content="Имя не указано или содержит ошибки" class="input__warning" src="img/icons/warning.svg" alt="">
                       </div>
                       <!-- /.input -->
 
                       <div class="input mb-3">
-                        <input type="number" class="input__field" placeholder="Ваш возраст">
+                        <input name="user_age" type="number" class="input__field" placeholder="Ваш возраст">
+                        <img data-tippy-content="Поле содержит ошибки" class="input__warning" src="img/icons/warning.svg" alt="">
                       </div>
                       <!-- /.input -->
 
                       <div class="input mb-4">
-                        <input type="text" class="input__field" placeholder="Что думаете о новом парке">
+                        <input name="user_message" data-required type="text" class="input__field" placeholder="Что думаете о новом парке">
+                        <img data-tippy-content="Поле пустое или в нем меньше шести символов" class="input__warning" src="img/icons/warning.svg" alt="">
                       </div>
                       <!-- /.input -->
 
                       <div class="form__action">
-                        <button class="button button-primary d-block mx-auto">Отправить</button>
+                        <button type="submit" data-sending="Отправляем..." class="button button-primary d-block mx-auto">Отправить</button>
                       </div>
                       <!-- /.form__action -->
                     </form>
@@ -1046,24 +1049,27 @@
                     Значимость этих проблем настолько очевидна, что рамки и место обучения кадров позволяет оценить значение соответствующий условий активизации. </p>
 
                   <div class="callback__form">
-                    <form action="" class="form">
-                      <div class="input mb-3">
-                        <input type="text" class="input__field" placeholder="Как вас зовут">
+                    <form action="php/test.php" class="form" data-target="callback">
+                    <div class="input mb-3">
+                        <input name="user_name" data-required type="text" class="input__field" placeholder="Как вас зовут">
+                        <img data-tippy-content="Имя не указано или содержит ошибки" class="input__warning" src="img/icons/warning.svg" alt="">
                       </div>
                       <!-- /.input -->
 
                       <div class="input mb-3">
-                        <input type="number" class="input__field" placeholder="Ваш возраст">
+                        <input name="user_age" type="number" class="input__field" placeholder="Ваш возраст">
+                        <img data-tippy-content="Поле содержит ошибки" class="input__warning" src="img/icons/warning.svg" alt="">
                       </div>
                       <!-- /.input -->
 
                       <div class="input mb-4">
-                        <input type="text" class="input__field" placeholder="Что думаете о новом парке">
+                        <input name="user_message" data-required type="text" class="input__field" placeholder="Что думаете о новом парке">
+                        <img data-tippy-content="Поле пустое или в нем меньше шести символов" class="input__warning" src="img/icons/warning.svg" alt="">
                       </div>
                       <!-- /.input -->
 
                       <div class="form__action">
-                        <button class="button button-primary d-block mx-auto">Отправить</button>
+                        <button type="submit" data-sending="Отправляем..." class="button button-primary d-block mx-auto">Отправить</button>
                       </div>
                       <!-- /.form__action -->
                     </form>

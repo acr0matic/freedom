@@ -91,7 +91,14 @@ else {
   }
 }
 
-tippy('[data-tippy-content]', {
+tippy('.input__warning[data-tippy-content]', {
+  placement: 'right',
+  allowHTML: true,
+  maxWidth: 300,
+  theme: 'freedom',
+});
+
+tippy('.about-map__tooltip[data-tippy-content]', {
   placement: 'top',
   allowHTML: true,
   maxWidth: 300,
@@ -146,3 +153,6 @@ if (hero) {
     else target.scrollIntoView({ behavior: 'smooth', });
   });
 }
+
+const forms = document.querySelectorAll('form');
+forms.forEach(form => new Form(form));

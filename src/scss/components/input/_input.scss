@@ -4,11 +4,20 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
-input[type=number] {
+input[type="number"] {
   -moz-appearance: textfield;
 }
 
 .input {
+  position: relative;
+
+  &--error {
+    .input__warning {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
   &__field {
     width: 100%;
 
@@ -38,5 +47,20 @@ input[type=number] {
         border-color: $input--hover;
       }
     }
+  }
+
+  &__warning {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+
+    transform: translateY(-50%);
+
+    cursor: help;
+
+    visibility: hidden;
+    opacity: 0;
+
+    transition: 0.15s ease;
   }
 }

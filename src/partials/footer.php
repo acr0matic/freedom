@@ -11,6 +11,7 @@
   <script src="scripts/libraries/popper.js"></script>
   <script src="scripts/libraries/tippy.js"></script>
   <script src="scripts/libraries/micromodal.js"></script>
+  <script src="scripts/libraries/formController.js"></script>
 
   <script src="scripts/script.js"></script>
   <script src="scripts/slider.js"></script>
