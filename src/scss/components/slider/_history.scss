@@ -40,7 +40,15 @@
 
       @include breakpoint($breakpoint-laptop--large) {
         left: -50px;
+        width: 70%;
+      }
+
+      @include breakpoint($breakpoint-laptop--medium) {
         width: 80%;
+      }
+
+      @include breakpoint($breakpoint-laptop) {
+        width: 75%;
       }
 
       @include breakpoint($breakpoint-tablet--large) {
@@ -91,6 +99,10 @@
           margin-right: 95px !important;
         }
 
+        @include breakpoint($breakpoint-laptop) {
+          margin-right: 60px !important;
+        }
+
         @include breakpoint($breakpoint-tablet--large) {
           margin-right: 15px !important;
         }
@@ -125,6 +137,11 @@
 
         transition: 0.15s ease;
 
+        @include breakpoint($breakpoint-laptop) {
+          font-size: $font-title-4;
+          left: -15px;
+        }
+
         @include breakpoint($breakpoint-tablet--large) {
           position: static;
           display: block;
@@ -132,7 +149,6 @@
           padding: 8px 24px 12px 24px;
           border-radius: 12px;
 
-          font-size: $font-title-4;
           color: $palette-cyan;
           background-color: rgba(30, 91, 96, 0.2);
         }

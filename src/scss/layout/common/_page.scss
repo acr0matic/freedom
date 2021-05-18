@@ -6,6 +6,10 @@
     &--main {
       font-size: $font-title-0;
 
+      @include breakpoint($breakpoint-laptop) {
+        font-size: $font-title-1;
+      }
+
       @include breakpoint($breakpoint-tablet--large) {
         font-size: $font-title-4;
       }
@@ -37,6 +41,10 @@
   &__text {
     font-size: $font-text-0;
     line-height: 125%;
+
+    @include breakpoint($breakpoint-laptop) {
+      font-size: $font-text-1;
+    }
 
     @include breakpoint($breakpoint-tablet--large) {
       font-size: $font-text-3;

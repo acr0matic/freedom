@@ -47,7 +47,7 @@ const newsSlider = new Swiper('.news-slider', {
   },
 });
 
-if (window.matchMedia('(max-width: 1400px)').matches && window.matchMedia('(min-width: 991px)').matches) {
+if (window.matchMedia('(max-width: 1700px)').matches && window.matchMedia('(min-width: 991px)').matches) {
   const advantageSlider = new Swiper('.advantages-slider', {
     loop: true,
     speed: 400,

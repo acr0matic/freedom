@@ -24,9 +24,12 @@
 
     margin-bottom: 65px;
 
+    @include breakpoint($breakpoint-laptop) {
+      margin-bottom: 25px;
+    }
+
     @include breakpoint($breakpoint-tablet--large) {
       justify-content: center;
-      margin-bottom: 25px;
     }
 
     .section__title {
@@ -44,6 +47,10 @@
     font-family: Geometria, sans-serif;
 
     color: $palette-cyan;
+
+    @include breakpoint($breakpoint-laptop) {
+      font-size: $font-title-2;
+    }
 
     @include breakpoint($breakpoint-tablet--large) {
       display: block;
@@ -73,6 +80,10 @@
 
   &__text {
     font-size: $font-text-1;
+
+    @include breakpoint($breakpoint-laptop) {
+      font-size: $font-text-2;
+    }
 
     @include breakpoint($breakpoint-tablet--large) {
       font-size: $font-text-3;

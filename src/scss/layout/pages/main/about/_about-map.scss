@@ -57,6 +57,14 @@
 
     object-fit: cover;
 
+    @include breakpoint($breakpoint-laptop) {
+      height: 380px;
+    }
+
+    @include breakpoint($breakpoint-laptop and min-height 700px) {
+      height: 450px;
+    }
+
     @include breakpoint($breakpoint-tablet--large) {
       border-radius: 12px;
       box-shadow: $shadow;

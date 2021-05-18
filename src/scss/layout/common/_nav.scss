@@ -62,5 +62,9 @@
   &__link {
     font-size: $font-text-1;
     transition: 0.15s ease;
+
+    @include breakpoint($breakpoint-laptop) {
+      font-size: $font-text-3;
+    }
   }
 }
