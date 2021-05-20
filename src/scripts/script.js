@@ -22,19 +22,6 @@ else {
   });
 }
 
-
-function SetAnchors(menu) {
-  menu.forEach((item, index) => {
-    item.addEventListener('click', (e) => {
-      e.preventDefault();
-      sectionSlider.slideTo(index);
-      sectionSlider.mousewheel.enable();
-    });
-  });
-}
-
-SetAnchors(headerLinks);
-
 const selectList = document.querySelector('[data-trigger]');
 let choises = null;
 if (selectList) {
@@ -157,3 +144,4 @@ MicroModal.init({
 
 const forms = document.querySelectorAll('form');
 forms.forEach(form => new Form(form));
+

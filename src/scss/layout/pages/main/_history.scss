@@ -7,6 +7,12 @@
       height: calc(100% - 165px);
     }
   }
+
+  .section__header {
+    @include breakpoint(max-height 700px) {
+      margin-bottom: 25px;
+    }
+  }
 }
 
 .history {

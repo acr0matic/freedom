@@ -1,9 +1,18 @@
 #feedback {
+  .section__title {
+    @include breakpoint(max-height 700px) {
+      margin-bottom: 25px;
+    }
+  }
 }
 
 .feedback {
   &__text {
     margin-bottom: 65px;
+
+    @include breakpoint(max-height 700px) {
+      margin-bottom: 45px;
+    }
   }
 
   &__picture {
@@ -19,9 +28,16 @@
     @include breakpoint($breakpoint-laptop--large) {
       top: 0;
     }
+
+    @include breakpoint(max-height 700px) {
+      max-height: 450px;
+    }
   }
 
   &__image {
     width: 100%;
+    height: 100%;
+
+    object-fit: cover;
   }
 }

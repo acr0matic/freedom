@@ -1,10 +1,18 @@
 #callback {
-
+  .section__title {
+    @include breakpoint(max-height 700px) {
+      margin-bottom: 25px;
+    }
+  }
 }
 
 .callback {
   &__text {
     margin-bottom: 65px;
+
+    @include breakpoint(max-height 700px) {
+      margin-bottom: 45px;
+    }
   }
 
   &__picture {

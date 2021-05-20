@@ -20,7 +20,7 @@
   .swiper-wrapper {
     align-items: flex-start !important;
 
-    @include breakpoint($breakpoint-laptop--large) {
+    @include breakpoint($breakpoint-tablet--large) {
       align-items: stretch !important;
     }
   }
@@ -120,11 +120,15 @@
     }
 
     &--big {
+      @media screen and (max-height: 815px) {
+        height: 400px;
+      }
+
       @include breakpoint($breakpoint-tablet--large) {
         display: none;
       }
 
-      @include breakpoint(min-width 1200px) {
+      @include breakpoint($breakpoint-laptop--medium and min-height 815px) {
         .news__picture {
           height: 380px;
         }
@@ -180,7 +184,11 @@
       display: none;
     }
 
-    @media screen and (max-width: 1200px) and (min-height: 770px) {
+    @media screen and (max-height: 815px) {
+      display: none;
+    }
+
+    @media screen and (max-width: 1400px) and (min-height: 815px) {
       position: absolute;
       z-index: 2;
       bottom: -100px;

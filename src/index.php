@@ -46,6 +46,35 @@
           <div class="container">
             <div class="section__header">
               <h2 class="callback__title section__title">О проекте</h2>
+
+              <div class="about__control">
+                <div class="swiper-container about-control">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <span class="about-control__title">Описание</span>
+                    </div>
+                    <!-- /.swiper-slide -->
+
+                    <div class="swiper-slide">
+                      <span class="about-control__title">Визуализации</span>
+                    </div>
+                    <!-- /.swiper-slide -->
+
+                    <div class="swiper-slide">
+                      <span class="about-control__title">Этапы</span>
+                    </div>
+                    <!-- /.swiper-slide -->
+                  </div>
+                  <!-- /.swiper-wrapper -->
+                </div>
+                <!-- /.swiper-container about-control -->
+
+                <div class="swiper-button-prev about-slider-prev"></div>
+                <div class="swiper-button-next about-slider-next"></div>
+              </div>
+              <!-- /.about__control -->
+
+
               <div data-micromodal-trigger="modal-document" class="about-document__action">
                 <a class="about-document__link link">
                   <svg class="link__icon link__icon--cyan me-2 mb-1" width="23" height="29" viewBox="0 0 23 29" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -70,13 +99,11 @@
                     <div class="row">
                       <div class="col-12 col-lg-7 col-xxl-6 mb-4 mb-lg-0">
                         <p class="about-project__text">
-                          Свободный — молодой энергичный город, который развивается на перекрёстке важнейших транспортных артерий на фронтире страны с начала ХХ века. Раньше
-                          и теперь — сюда приезжают люди разных профессий, национальностей, культур и стремятся двигать жизнь вперёд.
+                          Свободный — молодой энергичный город Амурской области, который развивается на перекрёстке важнейших транспортных артерий на фронтире страны с начала ХХ века. Раньше и теперь — сюда приезжают люди разных профессий, национальностей, культур и стремятся двигать жизнь вперёд.
                           <br> <br>
-                          Но жизнь — не только работа. Горожане мечтают о месте,
-                          где можно переключиться. Гулять, любоваться деревьями и цветами. Выбрать развлечение по душе. Получить яркие эмоции и теплоту общения. Пересечься с друзьями. Отдохнуть и дышать полной грудью. Быть свободными. Такое возможно? Да!
+                          Но жизнь — не только работа. Горожане мечтают о месте, где можно переключиться. Гулять, любоваться деревьями и цветами. Выбрать развлечение по душе. Получить яркие эмоции и теплоту общения. Пересечься с друзьями. Отдохнуть и дышать полной грудью. Быть свободными. Такое возможно? Да!
                           <br> <br>
-                          Городской парк — это зелёный островок свободы в центре города. Парк свободного времени и жизни. Свободный участвует во Всероссийском конкурсе лучших проектов создания комфортной городской среды.
+                          В городе прошел целый ряд мероприятий по вовлечению жителей. Свободный участвует во Всероссийском конкурсе лучших проектов создания комфортной городской среды.
                         </p>
                       </div>
                       <!-- /.col-7 -->
@@ -87,7 +114,7 @@
                             <div class="swiper-wrapper">
                               <div class="swiper-slide">
                                 <div class="about-project__picture">
-                                  <a href="img/page/main/about/project/1.jpg" data-fslightbox>
+                                  <a href="img/page/main/about/project/full/1.jpg" data-fslightbox>
                                     <img src="img/page/main/about/project/1.jpg" alt="" class="about-project__image">
                                   </a>
                                 </div>
@@ -97,7 +124,7 @@
 
                               <div class="swiper-slide">
                                 <div class="about-project__picture">
-                                  <a href="img/page/main/about/project/2.jpg" data-fslightbox>
+                                  <a href="img/page/main/about/project/full/2.jpg" data-fslightbox>
                                     <img src="img/page/main/about/project/2.jpg" alt="" class="about-project__image">
                                   </a>
                                 </div>
@@ -107,7 +134,7 @@
 
                               <div class="swiper-slide">
                                 <div class="about-project__picture">
-                                  <a href="img/page/main/about/project/3.jpg" data-fslightbox>
+                                  <a href="img/page/main/about/project/full/3.jpg" data-fslightbox>
                                     <img src="img/page/main/about/project/3.jpg" alt="" class="about-project__image">
                                   </a>
                                 </div>
@@ -117,7 +144,7 @@
 
                               <div class="swiper-slide">
                                 <div class="about-project__picture">
-                                  <a href="img/page/main/about/project/4.jpg" data-fslightbox>
+                                  <a href="img/page/main/about/project/full/4.jpg" data-fslightbox>
                                     <img src="img/page/main/about/project/4.jpg" alt="" class="about-project__image">
                                   </a>
                                 </div>
@@ -127,8 +154,18 @@
 
                               <div class="swiper-slide">
                                 <div class="about-project__picture">
-                                  <a href="img/page/main/about/project/5.jpg" data-fslightbox>
+                                  <a href="img/page/main/about/project/full/5.jpg" data-fslightbox>
                                     <img src="img/page/main/about/project/5.jpg" alt="" class="about-project__image">
+                                  </a>
+                                </div>
+                                <!-- /.about-project__picture -->
+                              </div>
+                              <!-- /.swiper-slide -->
+
+                              <div class="swiper-slide">
+                                <div class="about-project__picture">
+                                  <a href="img/page/main/about/project/full/6.jpg" data-fslightbox>
+                                    <img src="img/page/main/about/project/6.jpg" alt="" class="about-project__image">
                                   </a>
                                 </div>
                                 <!-- /.about-project__picture -->
@@ -176,6 +213,14 @@
                               <div class="swiper-slide">
                                 <div class="about-project__picture about-project__picture--thumb">
                                   <img src="img/page/main/about/project/thumb/5.jpg" alt="" class="about-project__image">
+                                </div>
+                                <!-- /.about-project__picture -->
+                              </div>
+                              <!-- /.swiper-slide -->
+
+                              <div class="swiper-slide">
+                                <div class="about-project__picture about-project__picture--thumb">
+                                  <img src="img/page/main/about/project/thumb/6.jpg" alt="" class="about-project__image">
                                 </div>
                                 <!-- /.about-project__picture -->
                               </div>
@@ -409,7 +454,7 @@
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M8.625 11.6H7.1875C6.80625 11.6 6.44062 11.4472 6.17103 11.1753C5.90145 10.9034 5.75 10.5346 5.75 10.15C5.75 9.76544 5.90145 9.39662 6.17103 9.1247C6.44062 8.85277 6.80625 8.7 7.1875 8.7H8.625C9.00625 8.7 9.37188 8.85277 9.64147 9.1247C9.91105 9.39662 10.0625 9.76544 10.0625 10.15C10.0625 10.5346 9.91105 10.9034 9.64147 11.1753C9.37188 11.4472 9.00625 11.6 8.625 11.6ZM6.17103 14.9247C6.44062 14.6528 6.80625 14.5 7.1875 14.5H15.8125C16.1937 14.5 16.5594 14.6528 16.829 14.9247C17.0985 15.1966 17.25 15.5654 17.25 15.95C17.25 16.3346 17.0985 16.7034 16.829 16.9753C16.5594 17.2472 16.1937 17.4 15.8125 17.4H7.1875C6.80625 17.4 6.44062 17.2472 6.17103 16.9753C5.90145 16.7034 5.75 16.3346 5.75 15.95C5.75 15.5654 5.90145 15.1966 6.17103 14.9247ZM15.8125 20.3C16.1937 20.3 16.5594 20.4528 16.829 20.7247C17.0985 20.9966 17.25 21.3654 17.25 21.75C17.25 22.1346 17.0985 22.5034 16.829 22.7753C16.5594 23.0472 16.1937 23.2 15.8125 23.2H7.1875C6.80625 23.2 6.44062 23.0472 6.17103 22.7753C5.90145 22.5034 5.75 22.1346 5.75 21.75C5.75 21.3654 5.90145 20.9966 6.17103 20.7247C6.44062 20.4528 6.80625 20.3 7.1875 20.3H15.8125Z" fill="#1E5B60" />
                           </svg>
 
-                          ИТОГОВЫЙ ПРОТОКОЛ №2
+                          Итоговый протокол №2
                         </a>
                       </div>
                       <!-- /.about-document__item -->
@@ -944,10 +989,12 @@
                 <!-- /.col-7 -->
 
                 <div class="col-12 col-lg-5 offset-0 offset-xxl-1 mb-4 mb-lg-0">
-                  <picture class="feedback__picture">
-                    <source srcset="img/page/main/feedback/picture.webp" type="image/webp">
-                    <img src="img/page/main/feedback/picture.jpg" alt="" class="feedback__image">
-                  </picture>
+                  <a data-fslightbox="map" href="img/page/main/feedback/picture.jpg">
+                    <picture class="feedback__picture">
+                      <source srcset="img/page/main/feedback/picture.webp" type="image/webp">
+                      <img src="img/page/main/feedback/picture.jpg" alt="" class="feedback__image">
+                    </picture>
+                  </a>
                 </div>
                 <!-- /.col-5 -->
               </div>
@@ -1050,7 +1097,7 @@
 
                   <div class="callback__form">
                     <form action="php/test.php" class="form" data-target="callback">
-                    <div class="input mb-3">
+                      <div class="input mb-3">
                         <input name="user_name" data-required type="text" class="input__field" placeholder="Как вас зовут">
                         <img data-tippy-content="Имя не указано или содержит ошибки" class="input__warning" src="img/icons/warning.svg" alt="">
                       </div>
@@ -1078,7 +1125,7 @@
                 </div>
                 <!-- /.col-7 -->
 
-                <div class="col-12 col-lg-5 col-xxl-4 offset-0 offset-xxl-1">
+                <div class="col-12 col-xl-5 col-xxl-4 offset-0 offset-xxl-1">
                   <div class="contact">
                     <div class="contact__wrapper">
                       <div class="contact__list">
@@ -1247,7 +1294,7 @@
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M8.625 11.6H7.1875C6.80625 11.6 6.44062 11.4472 6.17103 11.1753C5.90145 10.9034 5.75 10.5346 5.75 10.15C5.75 9.76544 5.90145 9.39662 6.17103 9.1247C6.44062 8.85277 6.80625 8.7 7.1875 8.7H8.625C9.00625 8.7 9.37188 8.85277 9.64147 9.1247C9.91105 9.39662 10.0625 9.76544 10.0625 10.15C10.0625 10.5346 9.91105 10.9034 9.64147 11.1753C9.37188 11.4472 9.00625 11.6 8.625 11.6ZM6.17103 14.9247C6.44062 14.6528 6.80625 14.5 7.1875 14.5H15.8125C16.1937 14.5 16.5594 14.6528 16.829 14.9247C17.0985 15.1966 17.25 15.5654 17.25 15.95C17.25 16.3346 17.0985 16.7034 16.829 16.9753C16.5594 17.2472 16.1937 17.4 15.8125 17.4H7.1875C6.80625 17.4 6.44062 17.2472 6.17103 16.9753C5.90145 16.7034 5.75 16.3346 5.75 15.95C5.75 15.5654 5.90145 15.1966 6.17103 14.9247ZM15.8125 20.3C16.1937 20.3 16.5594 20.4528 16.829 20.7247C17.0985 20.9966 17.25 21.3654 17.25 21.75C17.25 22.1346 17.0985 22.5034 16.829 22.7753C16.5594 23.0472 16.1937 23.2 15.8125 23.2H7.1875C6.80625 23.2 6.44062 23.0472 6.17103 22.7753C5.90145 22.5034 5.75 22.1346 5.75 21.75C5.75 21.3654 5.90145 20.9966 6.17103 20.7247C6.44062 20.4528 6.80625 20.3 7.1875 20.3H15.8125Z" fill="#1E5B60" />
               </svg>
 
-              ИТОГОВЫЙ ПРОТОКОЛ №2
+              Итоговый протокол №2
             </a>
           </div>
           <!-- /.about-document__item -->

@@ -1,0 +1,9 @@
+.about-control {
+  &__title {
+    display: block;
+    text-align: center;
+
+    font-size: $font-title-2;
+    font-weight: $weight-Bold;
+  }
+}

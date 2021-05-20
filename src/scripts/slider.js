@@ -68,9 +68,11 @@ const mapSlider = new Swiper('.map-slider', {
 });
 
 const documentAction = document.querySelector('.about-document__action');
+
+const aboutSliderContainer = document.querySelector('.about-slider');
 let aboutSlider = null;
 if (window.matchMedia('(min-width: 991px)').matches) {
-  aboutSlider = new Swiper('.about-slider', {
+  aboutSlider = new Swiper(aboutSliderContainer, {
     speed: 400,
     mousewheel: true,
     simulateTouch: false,
@@ -90,8 +92,29 @@ if (window.matchMedia('(min-width: 991px)').matches) {
     },
   });
 }
+const aboutControlContainer = document.querySelector('.about-control');
+aboutControl = new Swiper(aboutControlContainer, {
+  speed: 400,
+  simulateTouch: false,
+  spaceBetween: 30,
+  slidesPerView: 1,
+
+  navigation: {
+    nextEl: '.about-slider-next',
+    prevEl: '.about-slider-prev',
+  },
+});
+
+if (aboutSliderContainer && aboutControlContainer) {
+  aboutControl.controller.control = aboutSlider;
+  aboutSlider.controller.control = aboutControl;
+}
+
 
 const dateList = [];
+const historyPagination = document.querySelector('.history-pagination');
+let historyScroll = 0;
+
 const historySlider = new Swiper('.history-slider', {
   speed: 400,
   simulateTouch: false,
@@ -108,7 +131,14 @@ const historySlider = new Swiper('.history-slider', {
 
     slideChange() {
       choices.setChoiceByValue(dateList[historySlider.realIndex]);
-    }
+
+      historyScroll = 122 * historySlider.realIndex;
+      historyPagination.scrollTo({
+        top: 0,
+        left: historyScroll,
+        behavior: 'smooth'
+      });
+    },
   },
 
   pagination: {
@@ -157,3 +187,18 @@ if (projectThumbContainer && projectSlideContainer) {
   projectSlider.controller.control = projectThumbSlider;
   projectThumbSlider.controller.control = projectSlider;
 }
+
+function SetAnchors(menu) {
+  menu.forEach((item, index) => {
+    item.addEventListener('click', (e) => {
+      e.preventDefault();
+      if (index === 1) aboutSlider.slideTo(0);
+
+      sectionSlider.slideTo(index);
+      sectionSlider.mousewheel.enable();
+    });
+  });
+}
+
+if (!isNews) SetAnchors(headerLinks);
+

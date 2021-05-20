@@ -11,6 +11,11 @@
 
     width: 96px;
 
+    @include breakpoint(max-height 700px) {
+      top: 90px;
+      width: 78px;
+    }
+
     @include breakpoint($breakpoint-laptop--large) {
       top: 25px;
     }
@@ -76,6 +81,10 @@
 
       @include breakpoint($breakpoint-tablet--large) {
         margin-bottom: 80px;
+      }
+
+      @include breakpoint(max-height 700px) {
+        margin-bottom: 25px;
       }
     }
 
@@ -262,5 +271,9 @@
 
     visibility: hidden;
     opacity: 0;
+
+    @include breakpoint(max-height 700px) {
+      font-size: $font-text-2;
+    }
   }
 }

@@ -62,7 +62,7 @@
     }
 
     @include breakpoint($breakpoint-laptop and min-height 700px) {
-      height: 450px;
+      height: 420px;
     }
 
     @include breakpoint($breakpoint-laptop and min-height 800px) {

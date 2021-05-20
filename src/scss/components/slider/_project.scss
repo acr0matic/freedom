@@ -1,7 +1,19 @@
 .project-slider {
   .swiper-slide {
+    @include breakpoint(max-height 865px) {
+      height: 400px;
+
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    @include breakpoint(max-height 760px) {
+      height: 300px;
+    }
+
     @include breakpoint($breakpoint-tablet--large) {
       width: 85%;
+      height: initial;
     }
   }
 }

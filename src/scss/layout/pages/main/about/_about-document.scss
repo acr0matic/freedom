@@ -28,6 +28,10 @@
       opacity: 1;
       visibility: visible;
     }
+
+    @include breakpoint($breakpoint-tablet--large) {
+      display: none;
+    }
   }
 
   &__item {
