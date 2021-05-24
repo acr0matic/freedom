@@ -27,6 +27,7 @@ input[type="number"] {
 
     padding: 18px 32px;
 
+    -webkit-box-shadow: $input__bg;
     box-shadow: $input__bg;
 
     font-size: $font-interface-0;

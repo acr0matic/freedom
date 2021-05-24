@@ -18,9 +18,9 @@ class Form {
     this.ValidateExpression = {
       phone: /^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){11}(\s*)?$/,
       name: /^[a-zA-Zа-яА-Я ]+$/,
-      message: /^\w{6,}/,
+      message: /.{6,}/,
       date: /[0-9]{2}\.[0-9]{2}\.[0-9]{4}/,
-      age: /[0-9]{23}/,
+      age: /(^[0-9]{0,3}$)/,
     }
 
     this.Mask();

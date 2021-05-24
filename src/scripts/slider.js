@@ -105,7 +105,7 @@ aboutControl = new Swiper(aboutControlContainer, {
   },
 });
 
-if (aboutSliderContainer && aboutControlContainer) {
+if (aboutSliderContainer && aboutControlContainer && aboutSlider) {
   aboutControl.controller.control = aboutSlider;
   aboutSlider.controller.control = aboutControl;
 }
@@ -186,6 +186,20 @@ const projectThumbSlider = new Swiper(projectThumbContainer, {
 if (projectThumbContainer && projectSlideContainer) {
   projectSlider.controller.control = projectThumbSlider;
   projectThumbSlider.controller.control = projectSlider;
+}
+
+if (window.matchMedia('(max-width: 1700px)').matches && window.matchMedia('(min-width: 991px)').matches) {
+  const advantageSlider = new Swiper('.FAQ__wrapper', {
+    // loop: true,
+    speed: 400,
+    slidesPerView: 1,
+    spaceBetween: 100,
+
+    navigation: {
+      nextEl: '.FAQ-slider-next',
+      prevEl: '.FAQ-slider-prev',
+    },
+  });
 }
 
 function SetAnchors(menu) {

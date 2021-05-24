@@ -10,6 +10,10 @@
     margin-bottom: 25px;
   }
 
+  @include breakpoint($breakpoint-laptop--large) {
+    width: 48.5%;
+  }
+
   @include breakpoint($breakpoint-tablet--large) {
     flex-shrink: 0;
     width: 100%;
@@ -26,5 +30,8 @@
   }
 
   &__description {
+    @include breakpoint($breakpoint-laptop--large) {
+      font-size: $font-text-2;
+    }
   }
 }

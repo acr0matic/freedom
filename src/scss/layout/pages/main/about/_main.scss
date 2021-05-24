@@ -15,15 +15,26 @@
   &__control {
     position: relative;
 
-    width: 320px;
-    margin-left: 65px;
+    width: 210px;
+    margin-left: 48px;
     margin-right: auto;
+
+    margin-top: 5px;
 
 
     padding: 0 40px;
 
+    @include breakpoint($breakpoint-tablet--large) {
+      display: none;
+    }
+
     .swiper-button-next {
       right: 0;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+      transform: scale(0.9);
     }
   }
 }

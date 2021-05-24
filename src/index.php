@@ -27,10 +27,13 @@
               <!-- /.hero__action -->
 
               <div class="hero__partners partners">
-                <a href="" class="partners__link me-4 mt-2"><img src="img/logo/1.svg" alt="" class="partners__icon"></a>
-                <a href="" class="partners__link me-3"><img src="img/logo/2.svg" alt="" class="partners__icon"></a>
-                <a href="" class="partners__link me-3 mt-2"><img src="img/logo/3.png" alt="" class="partners__icon"></a>
-                <a href="" class="partners__link mt-2"><img src="img/logo/4.svg" alt="" class="partners__icon"></a>
+                <a href="" class="partners__link me-3"><img src="img/logo/7.png" alt="" class="partners__icon"></a>
+                <a href="" class="partners__link me-4"><img src="img/logo/2.svg" alt="" class="partners__icon"></a>
+                <a href="" class="partners__link me-4"><img src="img/logo/6.svg" alt="" class="partners__icon"></a>
+                <a href="" class="partners__link me-4"><img src="img/logo/5.svg" alt="" class="partners__icon"></a>
+                <a href="" class="partners__link me-4"><img src="img/logo/1.svg" alt="" class="partners__icon"></a>
+                <a href="" class="partners__link me-3"><img src="img/logo/3.png" alt="" class="partners__icon"></a>
+                <a href="" class="partners__link me-3"><img src="img/logo/4.svg" alt="" class="partners__icon"></a>
               </div>
               <!-- /.hero__partners partners -->
             </div>
@@ -73,7 +76,6 @@
                 <div class="swiper-button-next about-slider-next"></div>
               </div>
               <!-- /.about__control -->
-
 
               <div data-micromodal-trigger="modal-document" class="about-document__action">
                 <a class="about-document__link link">
@@ -885,8 +887,10 @@
                       <div class="row flex-column-reverse flex-lg-row">
                         <div class="col-12 col-lg-6 col-xxl-5">
                           <p class="history__text">
-                            Парк передан в обслуживание коллективу Российской армии. Проводились городские мероприятия, играл оркестр.
-                            В 50-60-х появились первые аттракционы.
+                            Однако к концу 80-90-х все опустело. Владельца у парка
+                            не было, так что к середине 2010-х парк превратился
+                            в заброшенный лес среди города. Аттракционы заржавели
+                            и вышли из строя.
                           </p>
                         </div>
                         <!-- /.col-5 -->
@@ -989,17 +993,25 @@
                 <!-- /.col-7 -->
 
                 <div class="col-12 col-lg-5 offset-0 offset-xxl-1 mb-4 mb-lg-0">
-                  <a data-fslightbox="map" href="img/page/main/feedback/picture.jpg">
+                  <div class="feedback__wrapper">
                     <picture class="feedback__picture">
                       <source srcset="img/page/main/feedback/picture.webp" type="image/webp">
                       <img src="img/page/main/feedback/picture.jpg" alt="" class="feedback__image">
                     </picture>
-                  </a>
+
+                    <button onclick="" class="feedback__button button button-primary">
+                      <svg class="me-3" width="32" height="30" viewBox="0 0 32 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M30.912 3.32131L21.312 0.0814799H21.2C21.1255 0.0739013 21.0505 0.0739013 20.976 0.0814799H20.608H20.4H20.288L11.2 3.24032L2.112 0.0814799C1.87139 0.00115081 1.61537 -0.0201773 1.36502 0.0192506C1.11467 0.0586785 0.877151 0.157735 0.672005 0.308268C0.465219 0.457327 0.296429 0.65406 0.179581 0.882216C0.0627327 1.11037 0.00117913 1.3634 5.33366e-06 1.6204V24.2992C-0.000860525 24.6388 0.103716 24.9701 0.298952 25.2463C0.494189 25.5224 0.770212 25.7295 1.08801 25.8381L10.688 29.078C11.0103 29.1844 11.3577 29.1844 11.68 29.078L20.8 26.0001L29.888 29.159C30.0579 29.1823 30.2301 29.1823 30.4 29.159C30.7345 29.1637 31.0611 29.0554 31.328 28.8512C31.5348 28.7021 31.7036 28.5054 31.8204 28.2772C31.9373 28.0491 31.9988 27.7961 32 27.5391V4.86023C32.0009 4.52063 31.8963 4.18933 31.701 3.91318C31.5058 3.63703 31.2298 3.42998 30.912 3.32131ZM9.6 25.2874L3.2 23.1329V3.87208L9.6 6.02657V25.2874ZM19.2 23.1329L12.8 25.2874V6.02657L19.2 3.87208V23.1329ZM28.8 25.2874L22.4 23.1329V3.87208L28.8 6.02657V25.2874Z" fill="#FFCB27" />
+                      </svg>
+
+                      Открыть карту
+                    </button>
+                  </div>
+                  <!-- /.feedback__wrapper -->
                 </div>
                 <!-- /.col-5 -->
               </div>
               <!-- /.row -->
-
             </div>
             <!-- /.feedback -->
           </div>
@@ -1015,9 +1027,9 @@
               <h2 class="FAQ__title section__title">Часто задаваемые вопросы</h2>
 
               <div class="FAQ__container">
-                <div class="FAQ__wrapper">
-                  <div class="row">
-                    <div class="col-12 col-xxl-4 mb-4 mb-lg-0">
+                <div class="FAQ__wrapper swiper-container">
+                  <div class="row swiper-wrapper">
+                    <div class="swiper-slide col-12 col-xxl-4">
                       <div class="FAQ__card FAQ-card">
                         <h3 class="FAQ-card__title">Это один из проектов, которые обещают реализовать, но забудут?</h3>
                         <p class="FAQ-card__description">За время существования конкурса 320 городов выиграли гранты. Команда Центра Пространственного Развития (ЦПР) помогла выиграть гранты уже 9 городам — эти проекты сейчас реализуются и будут завершены до конца 2021 года. Поэтому главное — победить в Конкурсе.</p>
@@ -1032,7 +1044,7 @@
                     </div>
                     <!-- /.col-4 -->
 
-                    <div class="col-12 col-xxl-4 mt-0 mt-lg-4 mt-xxl-0 mb-4 mb-lg-0">
+                    <div class="swiper-slide col-12 col-xxl-4">
                       <div class="FAQ__card FAQ-card">
                         <h3 class="FAQ-card__title">В какие сроки проект будет реализован?</h3>
                         <p class="FAQ-card__description">В случае победы проект реализуют до 31 декабря 2022 года.</p>
@@ -1047,31 +1059,25 @@
                     </div>
                     <!-- /.col-4 -->
 
-                    <div class="col-12 col-xxl-4 mt-0 mt-lg-4 mt-xxl-0">
-                      <div class="row">
-                        <div class="col-12 col-xxl-12 mb-4">
-                          <div class="FAQ__card FAQ-card">
-                            <h3 class="FAQ-card__title">Может ли проект измениться после конкурса?</h3>
-                            <p class="FAQ-card__description">Только в некоторых деталях. Сама концепция нового парка останется неизменной. Это обязательное условие конкурса.</p>
-                          </div>
-                          <!-- /.FAQ__card -->
-                        </div>
-                        <!-- /.col-12 -->
-
-                        <div class="col-12 col-xxl-12 mb-4">
-                          <div class="FAQ__card FAQ-card">
-                            <h3 class="FAQ-card__title">Как я могу участвовать в проекте?</h3>
-                            <p class="FAQ-card__description">Отвечайте на онлайн-опросы, участвуйте в общественных семинарах и фокус-группах или же станьте партнером или оператором коммерческого или социального объекта. </p>
-                          </div>
-                          <!-- /.FAQ__card -->
-                        </div>
-                        <!-- /.col-12 -->
+                    <div class="swiper-slide col-12 col-xxl-4">
+                      <div class="FAQ__card FAQ-card">
+                        <h3 class="FAQ-card__title">Может ли проект измениться после конкурса?</h3>
+                        <p class="FAQ-card__description">Только в некоторых деталях. Сама концепция нового парка останется неизменной. Это обязательное условие конкурса.</p>
                       </div>
-                      <!-- /.row -->
+                      <!-- /.FAQ__card -->
+
+                      <div class="FAQ__card FAQ-card">
+                        <h3 class="FAQ-card__title">Как я могу участвовать в проекте?</h3>
+                        <p class="FAQ-card__description">Отвечайте на онлайн-опросы, участвуйте в общественных семинарах и фокус-группах или же станьте партнером или оператором коммерческого или социального объекта. </p>
+                      </div>
+                      <!-- /.FAQ__card -->
                     </div>
                     <!-- /.col-4 -->
                   </div>
                   <!-- /.row -->
+
+                  <div class="swiper-button-prev FAQ-slider-prev"></div>
+                  <div class="swiper-button-next FAQ-slider-next"></div>
                 </div>
                 <!-- /.FAQ__wrapper -->
               </div>
@@ -1156,10 +1162,13 @@
                       <!-- /.contact__list -->
 
                       <div class="contact__partners partners">
-                        <a href="" class="partners__link me-4 mt-2"><img src="img/logo/1.svg" alt="" class="partners__icon"></a>
-                        <a href="" class="partners__link me-3"><img src="img/logo/2.svg" alt="" class="partners__icon"></a>
-                        <a href="" class="partners__link me-3 mt-2"><img src="img/logo/3.png" alt="" class="partners__icon"></a>
-                        <a href="" class="partners__link mt-2"><img src="img/logo/4.svg" alt="" class="partners__icon"></a>
+                        <a href="" class="partners__link me-3"><img src="img/logo/7.png" alt="" class="partners__icon"></a>
+                        <a href="" class="partners__link me-4"><img src="img/logo/2.svg" alt="" class="partners__icon"></a>
+                        <a href="" class="partners__link me-4"><img src="img/logo/6.svg" alt="" class="partners__icon"></a>
+                        <a href="" class="partners__link"><img src="img/logo/5.svg" alt="" class="partners__icon"></a>
+                        <a href="" class="partners__link me-4 mt-3"><img src="img/logo/1.svg" alt="" class="partners__icon"></a>
+                        <a href="" class="partners__link me-3 mt-3"><img src="img/logo/3.png" alt="" class="partners__icon"></a>
+                        <a href="" class="partners__link me-3 mt-4"><img src="img/logo/4.svg" alt="" class="partners__icon"></a>
                       </div>
                       <!-- /.hero__partners partners -->
                     </div>

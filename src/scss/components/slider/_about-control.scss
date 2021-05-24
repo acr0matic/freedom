@@ -1,9 +1,11 @@
 .about-control {
   &__title {
     display: block;
+    margin-bottom: 5px;
+
     text-align: center;
 
-    font-size: $font-title-2;
+    font-size: $font-title-4;
     font-weight: $weight-Bold;
   }
 }

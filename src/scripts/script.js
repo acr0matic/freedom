@@ -145,3 +145,17 @@ MicroModal.init({
 const forms = document.querySelectorAll('form');
 forms.forEach(form => new Form(form));
 
+document.addEventListener("DOMContentLoaded", () => {
+  const href = window.location.hash.substr(1);
+  window.location.hash = "";
+
+  const section = document.querySelectorAll('.section-slider .swiper-slide section');
+
+  if (section.length !== 0) {
+    const id = [].map.call(section, (item) => item.id);
+
+    let sliderIndex = 0;
+    id.forEach((item, index) => { if (item === href) sliderIndex = index });
+    setTimeout(() => sectionSlider.slideTo(sliderIndex), 500);
+  }
+});

@@ -1,0 +1,52 @@
+.FAQ__wrapper {
+  overflow: visible;
+
+  @include breakpoint($breakpoint-laptop--large) {
+    overflow: hidden;
+
+    padding-left: 75px;
+    padding-right: 75px;
+  }
+
+  .swiper-wrapper {
+    @include breakpoint($breakpoint-laptop--large) {
+      flex-wrap: nowrap !important;
+    }
+
+    @include breakpoint($breakpoint-tablet--large) {
+      flex-direction: column;
+      margin: 0;
+    }
+  }
+
+  .swiper-slide {
+    @include breakpoint($breakpoint-laptop--large) {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+    }
+
+    @include breakpoint($breakpoint-tablet--large) {
+      flex-direction: column;
+    }
+
+    &:not(:last-child) {
+      @include breakpoint($breakpoint-tablet--large) {
+        margin-bottom: 25px;
+      }
+    }
+  }
+
+  .FAQ-slider-prev,
+  .FAQ-slider-next {
+    display: none;
+
+    @include breakpoint($breakpoint-laptop--large) {
+      display: block;
+    }
+
+    @include breakpoint($breakpoint-tablet--large) {
+      display: none;
+    }
+  }
+}
