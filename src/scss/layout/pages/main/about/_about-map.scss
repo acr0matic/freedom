@@ -22,28 +22,174 @@
     &--1 {
       .about-map__tooltip {
         &:nth-child(1) {
+          top: 54%;
+          left: 55%;
+
+          display: none;
+        }
+
+        &:nth-child(2) {
+          top: 54%;
+          left: 55%;
+        }
+
+        &:nth-child(3) {
+          top: 57%;
+          left: 36%;
+        }
+
+        &:nth-child(4) {
+          top: 63%;
+          left: 18%;
+        }
+
+        &:nth-child(5) {
+          top: 25%;
+          left: 45%;
+        }
+
+        &:nth-child(6) {
+          top: 32%;
+          left: 58%;
+        }
+
+        &:nth-child(7) {
+          top: 34%;
+          left: 73%;
+        }
+      }
+    }
+
+    &--2 {
+      .about-map__tooltip {
+        &:nth-child(1) {
           top: 40%;
           left: 39%;
         }
 
         &:nth-child(2) {
-          top: 70%;
-          left: 24%;
-        }
-
-        &:nth-child(3) {
           top: 72%;
           left: 49%;
         }
 
-        &:nth-child(4) {
+        &:nth-child(3) {
           top: 71%;
           left: 11%;
         }
 
-        &:nth-child(5) {
+        &:nth-child(4) {
           top: 84%;
           left: 41%;
+        }
+
+        &:nth-child(5) {
+          top: 70%;
+          left: 24%;
+        }
+      }
+    }
+
+    &--3 {
+      .about-map__tooltip {
+        &:nth-child(1) {
+          top: 67%;
+          left: 49%;
+        }
+
+        &:nth-child(2) {
+          top: 62%;
+          left: 18%;
+        }
+
+        &:nth-child(3) {
+          top: 53%;
+          left: 66%;
+        }
+
+        &:nth-child(4) {
+          top: 85%;
+          left: 28%;
+        }
+
+        &:nth-child(5) {
+          top: 90%;
+          left: 63%;
+        }
+      }
+    }
+
+    &--4 {
+      .about-map__tooltip {
+        &:nth-child(1) {
+          top: 82%;
+          left: 7%;
+        }
+
+        &:nth-child(2) {
+          top: 56%;
+          left: 5%;
+        }
+
+        &:nth-child(3) {
+          top: 63%;
+          left: 33%;
+        }
+
+        &:nth-child(4) {
+          top: 47%;
+          left: 59%;
+        }
+      }
+    }
+
+    &--5 {
+      .about-map__tooltip {
+        &:nth-child(1) {
+          top: 60%;
+          left: 17%;
+        }
+
+        &:nth-child(2) {
+          top: 87%;
+          left: 71%;
+        }
+      }
+    }
+
+    &--6 {
+      .about-map__tooltip {
+        &:nth-child(1) {
+          top: 78%;
+          left: 48%;
+        }
+
+        &:nth-child(2) {
+          top: 76%;
+          left: 89%;
+        }
+
+        &:nth-child(3) {
+          top: 90%;
+          left: 65%;
+        }
+      }
+    }
+
+    &--7 {
+      .about-map__tooltip {
+        &:nth-child(1) {
+          top: 64%;
+          left: 45%;
+        }
+
+        &:nth-child(2) {
+          top: 62%;
+          left: 75%;
+        }
+
+        &:nth-child(3) {
+          top: 93%;
+          left: 50%;
         }
       }
     }
