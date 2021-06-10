@@ -1,4 +1,11 @@
 #news {
+  .news-slider .swiper-slide:first-child {
+    display: none;
+
+    @include breakpoint($breakpoint-tablet--large) {
+      display: block;
+    }
+  }
 }
 
 #news-page {

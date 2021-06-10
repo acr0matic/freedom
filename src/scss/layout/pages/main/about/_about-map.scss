@@ -63,28 +63,28 @@
     &--2 {
       .about-map__tooltip {
         &:nth-child(1) {
-          top: 40%;
+          top: 30%;
           left: 39%;
         }
 
         &:nth-child(2) {
-          top: 72%;
+          top: 55%;
           left: 49%;
         }
 
         &:nth-child(3) {
-          top: 71%;
+          top: 61%;
           left: 11%;
         }
 
         &:nth-child(4) {
-          top: 84%;
+          top: 74%;
           left: 41%;
         }
 
         &:nth-child(5) {
-          top: 70%;
-          left: 24%;
+          top: 55%;
+          left: 22%;
         }
       }
     }
@@ -92,28 +92,28 @@
     &--3 {
       .about-map__tooltip {
         &:nth-child(1) {
-          top: 67%;
+          top: 50%;
           left: 49%;
         }
 
         &:nth-child(2) {
-          top: 62%;
+          top: 42%;
           left: 18%;
         }
 
         &:nth-child(3) {
-          top: 53%;
+          top: 43%;
           left: 66%;
         }
 
         &:nth-child(4) {
-          top: 85%;
-          left: 28%;
+          top: 80%;
+          left: 63%;
         }
 
         &:nth-child(5) {
-          top: 90%;
-          left: 63%;
+          top: 75%;
+          left: 28%;
         }
       }
     }
@@ -121,22 +121,22 @@
     &--4 {
       .about-map__tooltip {
         &:nth-child(1) {
-          top: 82%;
+          top: 62%;
           left: 7%;
         }
 
         &:nth-child(2) {
-          top: 56%;
+          top: 46%;
           left: 5%;
         }
 
         &:nth-child(3) {
-          top: 63%;
+          top: 43%;
           left: 33%;
         }
 
         &:nth-child(4) {
-          top: 47%;
+          top: 27%;
           left: 59%;
         }
       }
@@ -145,12 +145,12 @@
     &--5 {
       .about-map__tooltip {
         &:nth-child(1) {
-          top: 60%;
+          top: 40%;
           left: 17%;
         }
 
         &:nth-child(2) {
-          top: 87%;
+          top: 67%;
           left: 71%;
         }
       }
@@ -159,17 +159,17 @@
     &--6 {
       .about-map__tooltip {
         &:nth-child(1) {
-          top: 78%;
+          top: 58%;
           left: 48%;
         }
 
         &:nth-child(2) {
-          top: 76%;
+          top: 56%;
           left: 89%;
         }
 
         &:nth-child(3) {
-          top: 90%;
+          top: 70%;
           left: 65%;
         }
       }
@@ -178,17 +178,17 @@
     &--7 {
       .about-map__tooltip {
         &:nth-child(1) {
-          top: 64%;
+          top: 44%;
           left: 45%;
         }
 
         &:nth-child(2) {
-          top: 62%;
+          top: 42%;
           left: 75%;
         }
 
         &:nth-child(3) {
-          top: 93%;
+          top: 83%;
           left: 50%;
         }
       }
@@ -202,6 +202,7 @@
     height: 610px;
 
     object-fit: cover;
+    object-position: bottom;
 
     @include breakpoint($breakpoint-laptop and min-height 500px) {
       height: 380px;
@@ -258,25 +259,36 @@
     }
   }
 
+  &__prev,
   &__next {
     position: absolute;
-    right: 32px;
     bottom: 32px;
 
-    color: $palette-white;
-    text-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
-
-    font-size: $font-title-4;
     cursor: pointer;
 
-    @include breakpoint($breakpoint-laptop--large) {
-      right: 24px;
-      bottom: 24px;
-    }
+    filter: drop-shadow(0 0 3px rgba(100, 0, 0, 0.5));
 
     @include breakpoint($breakpoint-tablet--large) {
       display: none;
     }
+
+    @include breakpoint($breakpoint-laptop--large) {
+      bottom: 24px;
+    }
+  }
+
+  &__prev {
+    right: 120px;
+
+    transform: rotate(180deg);
+  }
+
+  &__next {
+    right: 32px;
+  }
+
+  &__last {
+    right: 32px;
   }
 
   &__content {

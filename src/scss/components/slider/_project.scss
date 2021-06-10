@@ -7,7 +7,7 @@
       overflow: hidden;
     }
 
-    @include breakpoint(max-height 760px) {
+    @include breakpoint(max-height 800px) {
       height: 300px;
     }
 
